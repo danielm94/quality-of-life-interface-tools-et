@@ -1,0 +1,44 @@
+custom_window = {
+	name = global_edicts_window
+	potential = {
+		FROM = {
+			has_country_flag = global_edicts_window_open
+		}
+	}
+}
+
+custom_icon = {
+	name = global_edicts_bg
+	potential = {
+		FROM = {
+			has_country_flag = global_edicts_window_open
+		}
+	}
+}
+
+custom_button = {
+	name = open_global_edict_button
+	potential = {
+		is_state = yes
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			if = {
+				limit = {
+					FROM = {
+						NOT = {
+							has_country_flag = global_edicts_window_open
+						}
+					}
+				}
+				set_country_flag = global_edicts_window_open
+			}
+			else = {
+				clr_country_flag = global_edicts_window_open
+			}
+		}
+	}
+	tooltip = open_global_edict_button_tt
+}

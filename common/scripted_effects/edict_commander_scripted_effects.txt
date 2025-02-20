@@ -1,0 +1,8 @@
+GEC_set_edict = {
+	every_owned_province = {
+		limit = {
+			is_state = yes
+		}
+		set_state_edict = $E$
+	}
+}

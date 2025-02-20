@@ -1,0 +1,15 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_global_edict_window_background"
+		texturefile = "gfx/interface/global_edict_commander_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_open_global_edict_window_button"
+		texturefile = "gfx/interface/global_edicts_tab.dds"
+		loadType = "INGAME"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}

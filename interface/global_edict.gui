@@ -1,0 +1,29 @@
+guiTypes{
+    windowType = {
+			name = "GlobalEdictInterface"
+            scripted = yes
+			backGround=""
+			position = { x=0 y=0 }
+			show_position = { x=0 y=0 }
+			hide_position = { x=-8 y=30 }
+			animation_type = "decelerated"
+			animation_time = 300
+			size = { x=500 y=500 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			Orientation = "LOWER_LEFT"
+			upsound = tab_trade
+
+			iconType =
+			{
+				name ="global_edict_background"
+                scripted = yes
+				spriteType = "GFX_global_edict_window_background"
+				position = { x= 4 y = 2 }
+				Orientation = "UPPER_LEFT"
+			}
+        }
+}

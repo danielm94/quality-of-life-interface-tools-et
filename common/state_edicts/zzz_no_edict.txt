@@ -1,0 +1,17 @@
+no_edict = {
+    potential = {
+        always = yes
+    }
+    allow = {
+        # This must also allow = yes if you want *anyone* to be able to set it.
+        always = no
+    }
+    modifier = {
+    }
+    
+    # AI won't pick it
+    ai_will_do = {
+        factor = 0
+    }
+    color = {255 255 255}
+}
