@@ -5,4 +5,11 @@ GEC_set_edict = {
 		}
 		set_state_edict = $E$
 	}
+	FROM = {
+		add_country_modifier = {
+			name = edict_commander_cooldown
+			duration = 365
+			hidden = yes
+		}
+	}
 }
