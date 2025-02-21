@@ -2760,8 +2760,8 @@ guiTypes = {
 				name = "global_edicts_window"
 				scripted=yes
 				backGround=""
-				position = { x=-51 y=0 }
-				size = { x=400 y=480 }
+				position = { x=485 y=138 }
+				size = { x=425 y=480 }
 				dontRender = ""
 				horizontalBorder= ""
 				verticalBorder= ""
@@ -2772,24 +2772,25 @@ guiTypes = {
 				name ="global_edicts_bg"
 				scripted = yes
 				spriteType = "GFX_global_edict_window_background"
-				position = { x = 550 y = -20 }
+				position = { x = 0 y = 0 }
 				}
 			
 				instantTextBoxType = {
 					name = "global_edicts_list_title"
-					position = { x = 590 y = 14 }
+					position = { x = 30 y = 24 }
 					textureFile = ""
-					font = "vic_22"
+					font = "vic_29s"
 					borderSize = {x = 2 y = 2}
 					text = "Select Edict for all States"
 					maxWidth = 380
 					maxHeight = 20
-					format = left
+					format = center
 				}
 
 				guiButtonType = {
-					name = "close_global_edicts_button"
-					position = { x = 1352 y = -26 }
+					name = "global_edicts_close_button"
+					scripted=yes
+					position = { x = 404 y = -6 }
 					quadTextureSprite ="GFX_closebutton2"
 					clicksound = close_window
 				}		

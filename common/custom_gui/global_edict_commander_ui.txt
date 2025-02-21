@@ -7,17 +7,23 @@ custom_window = {
 	}
 }
 
-custom_icon = {
-	name = global_edicts_bg
-	potential = {
-		FROM = {
-			has_country_flag = global_edicts_window_open
-		}
-	}
+custom_button = {
+    name = global_edicts_close_button
+    tooltip= close_global_edict_button_tt
+    potential = {
+    }
+    trigger = {
+    }
+    effect = {
+        FROM = {
+            clr_country_flag = global_edicts_window_open
+        }
+    }
 }
 
 custom_button = {
 	name = open_global_edict_button
+    	tooltip = open_global_edict_button_tt
 	potential = {
 		is_state = yes
 	}
@@ -40,5 +46,5 @@ custom_button = {
 			}
 		}
 	}
-	tooltip = open_global_edict_button_tt
+
 }
