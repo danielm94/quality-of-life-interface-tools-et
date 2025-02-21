@@ -13,10 +13,128 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 
-	#Buttons
 	spriteType = {
 		name = "GFX_global_edicts_no_edicts_button"
 		texturefile = "gfx/interface/buttons/no_edicts_button.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_advancement_button"
+		texturefile = "gfx/interface/ideas_EU4/local_institution_spread.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_centralization_button"
+		texturefile = "gfx/interface/ideas_EU4/local_autonomy.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_defensive_button"
+		texturefile = "gfx/interface/ideas_EU4/local_defensiveness.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_development_button"
+		texturefile = "gfx/interface/ideas_EU4/local_development_cost.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_enlistment_button"
+		texturefile = "gfx/interface/ideas_EU4/local_manpower_modifier.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_trade_button"
+		texturefile = "gfx/interface/ideas_EU4/province_trade_power_modifier.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_missionary_strength_button"
+		texturefile = "gfx/interface/ideas_EU4/local_missionary_strength.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_unrest_button"
+		texturefile = "gfx/interface/ideas_EU4/local_unrest.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_resist_reformation_button"
+		texturefile = "gfx/interface/ideas_EU4/global_religious_conversion_resistance.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_devastation_button"
+		texturefile = "gfx/interface/ideas_EU4/local_monthly_devastation.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_taxes_button"
+		texturefile = "gfx/interface/ideas_EU4/local_tax_modifier.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_local_religious_unity_button"
+		texturefile = "gfx/interface/ideas_EU4/local_religious_unity_contribution.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_local_seperatism_button"
+		texturefile = "gfx/interface/local_years_of_nationalism.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_goods_produced_button"
+		texturefile = "gfx/interface/ideas_EU4/trade_goods_size_modifier.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_movement_button"
+		texturefile = "gfx/interface/ideas_EU4/movement_speed.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_french_trade_button"
+		texturefile = "gfx/interface/ideas_EU4/province_trade_power_modifier.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_global_edicts_made_in_china_button"
+		texturefile = "gfx/interface/ideas_EU4/local_development_cost_modifier.dds"
 		loadType = "INGAME"
 		transparencecheck = yes
 	}

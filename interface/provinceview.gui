@@ -2798,9 +2798,129 @@ guiTypes = {
 				guiButtonType = {
 					name = "global_edicts_no_edicts_button"
 					scripted=yes
-					position = { x = 404 y = -6 }
+					position = { x = 20 y = 461 }
 					quadTextureSprite ="GFX_global_edicts_no_edicts_button"
 				}	
+
+				guiButtonType = {
+					name = "global_edicts_advancement_button"
+					scripted = yes
+					position = { x = 14 y = 62 }
+					quadTextureSprite = "GFX_global_edicts_advancement_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_centralization_button"
+					scripted = yes
+					position = { x = 83 y = 62 }
+					quadTextureSprite = "GFX_global_edicts_centralization_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_defensive_button"
+					scripted = yes
+					position = { x = 152 y = 62 }
+					quadTextureSprite = "GFX_global_edicts_defensive_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_development_button"
+					scripted = yes
+					position = { x = 219 y = 62 }
+					quadTextureSprite = "GFX_global_edicts_development_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_enlistment_button"
+					scripted = yes
+					position = { x = 285 y = 62 }
+					quadTextureSprite = "GFX_global_edicts_enlistment_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_trade_button"
+					scripted = yes
+					position = { x = 354 y = 62 }
+					quadTextureSprite = "GFX_global_edicts_trade_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_missionary_strength_button"
+					scripted = yes
+					position = { x = 18 y = 124 }
+					quadTextureSprite = "GFX_global_edicts_missionary_strength_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_unrest_button"
+					scripted = yes
+					position = { x = 81 y = 124 }
+					quadTextureSprite = "GFX_global_edicts_unrest_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_resist_reformation_button"
+					scripted = yes
+					position = { x = 150 y = 124 }
+					quadTextureSprite = "GFX_global_edicts_resist_reformation_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_devastation_button"
+					scripted = yes
+					position = { x = 217 y = 124 }
+					quadTextureSprite = "GFX_global_edicts_devastation_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_taxes_button"
+					scripted = yes
+					position = { x = 286 y = 124 }
+					quadTextureSprite = "GFX_global_edicts_taxes_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_local_religious_unity_button"
+					scripted = yes
+					position = { x = 353 y = 124 } #363 original
+					quadTextureSprite = "GFX_global_edicts_local_religious_unity_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_local_seperatism_button"
+					scripted = yes
+					position = { x = 14 y = 186 }
+					quadTextureSprite = "GFX_global_edicts_local_seperatism_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_goods_produced_button"
+					scripted = yes
+					position = { x = 84 y = 186 }
+					quadTextureSprite = "GFX_global_edicts_goods_produced_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_movement_button"
+					scripted = yes
+					position = { x = 153 y = 186 }
+					quadTextureSprite = "GFX_global_edicts_movement_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_french_trade_button"
+					scripted = yes
+					position = { x = 220 y = 189 }
+					quadTextureSprite = "GFX_global_edicts_french_trade_button"
+				}
+
+				guiButtonType = {
+					name = "global_edicts_made_in_china_button"
+					scripted = yes
+					position = { x = 285 y = 188}
+					quadTextureSprite = "GFX_global_edicts_made_in_china_button"
+				}
+
 		}
 
 			guiButtonType = {
