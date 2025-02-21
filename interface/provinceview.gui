@@ -2770,7 +2770,6 @@ guiTypes = {
 
 				iconType = {
 				name ="global_edicts_bg"
-				scripted = yes
 				spriteType = "GFX_global_edicts_window_background"
 				position = { x = 0 y = 0 }
 				}
