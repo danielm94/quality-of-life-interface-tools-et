@@ -1,6 +1,6 @@
 custom_window = {
 	name = global_edicts_window
-	potential = {
+		potential = {
 		FROM = {
 			has_country_flag = global_edicts_window_open
 		}
@@ -8,22 +8,22 @@ custom_window = {
 }
 
 custom_button = {
-    name = global_edicts_close_button
-    tooltip= close_global_edict_button_tt
-    potential = {
-    }
-    trigger = {
-    }
-    effect = {
-        FROM = {
-            clr_country_flag = global_edicts_window_open
-        }
-    }
+	name = global_edicts_close_button
+	tooltip = close_global_edict_button_tt
+	potential = {
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			clr_country_flag = global_edicts_window_open
+		}
+	}
 }
 
 custom_button = {
 	name = open_global_edict_button
-    	tooltip = open_global_edict_button_tt
+	tooltip = open_global_edict_button_tt
 	potential = {
 		is_state = yes
 	}
@@ -46,5 +46,402 @@ custom_button = {
 			}
 		}
 	}
+}
 
+custom_button = {
+	name = global_edicts_no_edicts_button
+	tooltip = global_edicts_no_edicts_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = no_edict
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_advancement_button
+	tooltip = global_edicts_advancement_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_advancement_effort
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_centralization_button
+	tooltip = global_edicts_centralization_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_centralization_effort
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_defensive_button
+	tooltip = global_edicts_defensive_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_defensive_edict
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_development_button
+	tooltip = global_edicts_development_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_encourage_development
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_enlistment_button
+	tooltip = global_edicts_enlistment_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_promote_military_recruitment
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_trade_button
+	tooltip = global_edicts_trade_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_protect_trade
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_missionary_strength_button
+	tooltip = global_edicts_missionary_strength_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_religious_unity
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_unrest_button
+	tooltip = global_edicts_unrest_button_tt
+	potential = {
+		FROM = {
+			AND = {
+				NOT = {
+					has_country_modifier = edict_commander_cooldown
+				}
+				current_age = age_of_discovery
+				has_country_flag = feudal_de_jure_law
+			}
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_feudal_de_jure_law
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_resist_reformation_button
+	tooltip = global_edicts_resist_reformation_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+			current_age = age_of_reformation
+			has_country_flag = religion_enforced_edict
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_religion_enforced
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_devastation_button
+	tooltip = global_edicts_devastation_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+			current_age = age_of_absolutism
+			has_country_flag = edict_of_absolutism
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = edict_of_absolutism
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_taxes_button
+	tooltip = global_edicts_taxes_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+			has_government_attribute = unlock_special_state_edicts
+			current_age = age_of_discovery
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = feudal_taxes_state_edict
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_local_religious_unity_button
+	tooltip = global_edicts_local_religious_unity_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+			current_age = age_of_reformation
+			has_government_attribute = unlock_special_state_edicts
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = religious_tolerance_state_edict
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_local_seperatism_button
+	tooltip = global_edicts_local_seperatism_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+			has_government_attribute = unlock_special_state_edicts
+			current_age = age_of_absolutism
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = state_integration_state_edict
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_goods_produced_button
+	tooltip = global_edicts_goods_produced_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+		}
+		has_government_attribute = unlock_special_state_edicts
+		current_age = age_of_revolutions
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = urbanization_state_edict
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_movement_button
+	tooltip = global_edicts_movement_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+			has_country_flag = fra_enable_infrastructure_network_flag
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = french_infrastructure_network
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_french_trade_button
+	tooltip = global_edicts_french_trade_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+			has_country_flag = fra_improve_trade_power_state_edict_flag
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = protect_trade_empowered
+			}
+		}
+	}
+}
+
+custom_button = {
+	name = global_edicts_made_in_china_button
+	tooltip = global_edicts_made_in_china_button_tt
+	potential = {
+		FROM = {
+			NOT = {
+				has_country_modifier = edict_commander_cooldown
+			}
+			has_country_flag = enable_industrialisation_flag
+			is_emperor_of_china = yes
+		}
+	}
+	trigger = {
+	}
+	effect = {
+		FROM = {
+			GEC_set_edict = {
+				E = chinese_industrialization
+			}
+		}
+	}
 }
