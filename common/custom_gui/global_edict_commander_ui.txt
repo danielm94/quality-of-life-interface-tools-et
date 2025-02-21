@@ -26,6 +26,7 @@ custom_button = {
 	tooltip = open_global_edict_button_tt
 	potential = {
 		is_state = yes
+		owned_by = FROM
 	}
 	trigger = {
 	}
@@ -364,9 +365,9 @@ custom_button = {
 			NOT = {
 				has_country_modifier = edict_commander_cooldown
 			}
+			has_government_attribute = unlock_special_state_edicts
+			current_age = age_of_revolutions
 		}
-		has_government_attribute = unlock_special_state_edicts
-		current_age = age_of_revolutions
 	}
 	trigger = {
 	}
