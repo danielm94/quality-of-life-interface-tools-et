@@ -101,7 +101,7 @@ country_event = {
 		}
 		hidden_effect = {
 			GEC_set_edict = {
-				E = protect_trade_empowered
+				E = french_infrastructure_network
 			}
 		}
 	}
@@ -130,6 +130,7 @@ country_event = {
 		highlight = yes
 		trigger = {
 			current_age = age_of_reformation
+			has_country_flag = religion_enforced_edict
 		}
 		hidden_effect = {
 			GEC_set_edict = {
