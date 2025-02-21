@@ -1,3 +1,7 @@
+![Screenshot of Global Edict Commander](https://raw.githubusercontent.com/danielm94/global-edict-commander/refs/heads/main/thumbnail.png)
+
+
+
 # Global Edict Commander
 
 A Europa Universalis IV mod that allows you to manage state edicts at a global level through a specialized interface. The mod provides a streamlined way to set or remove edicts across all states without having to open the province interface each time.
