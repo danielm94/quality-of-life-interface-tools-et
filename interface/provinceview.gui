@@ -2751,7 +2751,7 @@ guiTypes = {
 			guiButtonType = {
 				name = "open_global_edict_button"
 				scripted = yes
-				quadTextureSprite = "GFX_open_global_edict_window_button"
+				quadTextureSprite = "GFX_open_global_edicts_window_button"
 				position = { x=478 y=144}
 				shortcut="shift+d"
 			}	
@@ -2771,7 +2771,7 @@ guiTypes = {
 				iconType = {
 				name ="global_edicts_bg"
 				scripted = yes
-				spriteType = "GFX_global_edict_window_background"
+				spriteType = "GFX_global_edicts_window_background"
 				position = { x = 0 y = 0 }
 				}
 			
@@ -2793,7 +2793,14 @@ guiTypes = {
 					position = { x = 404 y = -6 }
 					quadTextureSprite ="GFX_closebutton2"
 					clicksound = close_window
-				}		
+				}	
+
+				guiButtonType = {
+					name = "global_edicts_no_edicts_button"
+					scripted=yes
+					position = { x = 404 y = -6 }
+					quadTextureSprite ="GFX_global_edicts_no_edicts_button"
+				}	
 		}
 
 			guiButtonType = {
