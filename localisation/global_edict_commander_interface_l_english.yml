@@ -1,7 +1,7 @@
 ﻿l_english:
  open_global_edict_button_tt: "Open Window to Set State Edict for All States"
  close_global_edict_button_tt: "Close window"
- global_edicts_no_edicts_button: "Remove all state edicts"
+ global_edicts_no_edicts_button_tt: "Remove all state edicts"
  global_edicts_advancement_button_tt: "Advancement Effort\nInstitution Spread: §G+33.0%§"
  global_edicts_centralization_button_tt: "Centralization Effort\nMonthly Autonomy Change: §G-0.03§"
  global_edicts_defensive_button_tt: "Defensive Edict\nLocal Defensiveness: §G+33.0%§"
