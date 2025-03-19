@@ -324,13 +324,6 @@ guiTypes = {
 			spriteType = "GFX_provinceview_foreign_bg_new"
 			position = { x= -2 y = -81}
 		}
-
-
-
-
-
-
-
 		iconType =
 		{
 			name ="trade_icon"
@@ -1538,6 +1531,99 @@ guiTypes = {
 				name = "fort_maintenance_lock_checkbox"
 				position = { x= 319 y= 406 }
 				quadTextureSprite = "GFX_maintenance_checkbox"
+			}
+
+			guiButtonType = {
+				name = "fort_macro_button"
+				position = { x=478 y=420}
+				quadTextureSprite ="GFX_fort_macro_tab"
+				scripted = yes
+				shortcut = "shift+f"
+			}
+
+			windowType = {
+				name = "fort_macro_window"
+				scripted=yes
+				backGround=""
+				position = { x=479 y=413 }
+				size = { x=225 y=189}
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				moveable = 0
+
+				iconType = {
+				name ="fort_macro_window_background"
+				spriteType = "GFX_fort_macro_window_background"
+				position = { x = 0 y = 0 }
+				}
+
+
+				instantTextBoxType = {
+					name = "fort_macro_title"
+					position = { x = -80 y = 22 }
+					textureFile = ""
+					font = "vic_22s"
+					borderSize = {x = 2 y = 2}
+					text = fort_macro_title_text
+					maxWidth = 380
+					maxHeight = 20
+					format = center
+				}
+
+				instantTextBoxType = {
+					name = "fort_macro_whitelist"
+					position = { x = 80 y = 77 }
+					textureFile = ""
+					font = "vic_22s"
+					borderSize = {x = 2 y = 2}
+					text = fort_macro_whitelist_text
+					maxWidth = 380
+					maxHeight = 20
+					format = left
+				}
+				instantTextBoxType = {
+					name = "fort_macro_delete_all_forts"
+					position = { x = 80 y = 130 }
+					textureFile = ""
+					font = "vic_22s"
+					borderSize = {x = 2 y = 2}
+					text = fort_macro_delete_all_forts_text
+					maxWidth = 380
+					maxHeight = 20
+					format = left
+				}
+
+				guiButtonType = {
+					name = "fort_macro_button_whitelisted"
+					position = { x=29 y=66}
+					quadTextureSprite ="GFX_fort_macro_button_whitelisted"
+					scripted = yes
+					shortcut = "shift+w"
+				}
+				guiButtonType = {
+					name = "fort_macro_button_blacklisted"
+					position = { x=29 y=66}
+					quadTextureSprite ="GFX_fort_macro_button_blacklisted"
+					scripted = yes
+					shortcut = "shift+w"
+				}
+
+				guiButtonType = {
+					name = "fort_macro_button_delete_all_forts"
+					position = { x=29 y=119}
+					quadTextureSprite ="GFX_fort_macro_button_delete_all_forts"
+					scripted = yes
+				}
+
+				guiButtonType = {
+					name = "fort_macro_close_button"
+					scripted=yes
+					position = { x = 190 y = -5 }
+					quadTextureSprite ="GFX_closebutton2"
+					clicksound = close_window
+				}	
 			}
 
 			iconType = {
