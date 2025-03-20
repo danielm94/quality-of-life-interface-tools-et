@@ -5,6 +5,10 @@ delete_all_forts_effect = {
 				has_province_flag = whitelisted_fort
 			}
 			fort_level = 2
+			controlled_by = owner
+			NOT = {
+				has_siege = yes
+			}
 		}
 		if = {
 			limit = {
