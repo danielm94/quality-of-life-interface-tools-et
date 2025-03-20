@@ -14,25 +14,25 @@ delete_all_forts_effect = {
 			limit = {
 				has_building = fort_15th
 			}
-            remove_building = fort_15th
+			remove_building = fort_15th
 		}
-        else_if = {
-            limit = {
+		else_if = {
+			limit = {
 				has_building = fort_16th
 			}
-            remove_building = fort_16th
-        }
-        else_if = {
-            limit = {
+			remove_building = fort_16th
+		}
+		else_if = {
+			limit = {
 				has_building = fort_17th
 			}
-            remove_building = fort_17th
-        }
-        else_if = {
-            limit = {
+			remove_building = fort_17th
+		}
+		else_if = {
+			limit = {
 				has_building = fort_18th
 			}
-            remove_building = fort_18th
-        }
+			remove_building = fort_18th
+		}
 	}
 }
