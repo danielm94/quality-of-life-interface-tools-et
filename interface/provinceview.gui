@@ -1615,6 +1615,7 @@ guiTypes = {
 					position = { x=29 y=119}
 					quadTextureSprite ="GFX_fort_macro_button_delete_all_forts"
 					scripted = yes
+					shortcut = "DELETE"
 				}
 
 				guiButtonType = {
