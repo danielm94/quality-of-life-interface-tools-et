@@ -57,7 +57,7 @@ guiTypes = {
 		}
 	}
 	
-	# Orthodox Patriarch
+	# fur Patriarch
 	windowType = {
 		name = "patriarch_state_view"
 		backGround=""
@@ -286,7 +286,7 @@ guiTypes = {
 		#position = { x=0 y=-583 }
 		position = { x=-1000 y=-593 }
 		show_position = { x=-8 y =-593 }
-		hide_position = { x=-1000 y =-593 }
+		hide_position = { x=-8 y =-593 }
 		animation_type = "decelerated"
 		animation_time = 300
 		size = { x=430 y=580 }
@@ -324,6 +324,13 @@ guiTypes = {
 			spriteType = "GFX_provinceview_foreign_bg_new"
 			position = { x= -2 y = -81}
 		}
+
+
+
+
+
+
+
 		iconType =
 		{
 			name ="trade_icon"
@@ -362,7 +369,6 @@ guiTypes = {
 			spriteType = "GFX_combat_terrain_hills"
 			position = { x = 58 y = -23 }
 		}
-
 
 		windowType = {
 			name = "top_section_window"
@@ -547,6 +553,1011 @@ guiTypes = {
 				shortcut = "ESCAPE"
 				clicksound = close_window
 			}
+		}
+		
+		#### BUILDINGS WINDOW
+		windowType = {
+			name = "buildings_window"
+			backGround=""
+			position = { x=480 y=13 }
+			size = { x=475 y=480 }
+			dontRender = ""
+			horizontalBorder= ""
+			verticalBorder= ""
+			fullScreen = no
+			moveable = 0
+			Orientation = "UPPER_LEFT"
+
+			#### GREAT PROJECTS WINDOW
+			windowType = {
+				name = "great_projects_window"
+				backGround=""
+				position = { x=15 y=-105 }
+				size = { x=475 y=210 }
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				moveable = 0
+				Orientation = "UPPER_LEFT"
+
+				iconType =
+				{
+					name ="great_projects_window_bg"
+					spriteType = "GFX_provinceview_great_projects_bg"
+					position = { x= -14 y = 0 }
+				}
+
+				instantTextBoxType = {
+					name = "header_label"
+					position = { x = 16 y = 29 }
+					textureFile = ""
+					font = "vic_22"
+					borderSize = {x = 2 y = 2}
+					text = "LEDGER_GREAT_PROJECTS"
+					maxWidth = 256 
+					maxHeight = 32
+					format = left
+				}
+				
+				smoothListboxType = {
+					name = "great_projects_list"
+					position = { x = 7 y = 55 }
+					backGround=""
+					size = { x = 300 y = 180 }
+					spacing = 2
+					scrollbartype = "standardlistbox_slider"
+					borderSize = { x = 0 y = 0 }
+				}
+
+				windowType = {
+					name = "custom_monument_gui_window"
+					scripted = yes
+					backGround=""
+					position = { x=7 y=55 }
+					size = { x=300 y=150 }
+					moveable = 0
+					dontRender = ""
+					horizontalBorder= ""
+					verticalBorder= ""
+					fullScreen = no
+
+					iconType = {
+						name ="custom_monument_gui_channel_tunnel_cover"
+						scripted = yes
+						spriteType = "GFX_channel_tunnel_cover"
+						position = { x= 0 y = 0 }
+					}
+
+					iconType = {
+						name ="custom_monument_gui_channel_cover_counter"
+						scripted = yes
+						spriteType = "GFX_channel_tunnel_cover_full"
+						position = { x= 0 y = 0 }
+					}
+
+					guiButtonType = {
+						name = "custom_monument_gui_destroy_channel_tunnel"
+						scripted = yes
+						position = { x=0 y=0 }
+						spriteType = "GFX_destroy_great_project"
+					}
+
+					iconType = {
+						name ="custom_monument_gui_destroy_progress"
+						scripted = yes
+						spriteType = "GFX_provinceView_progressbar"
+						position = { x = 165 y = 123 }
+					}
+
+					iconType = {
+						name ="custom_monument_gui_destroy_progress_frame"
+						scripted = yes
+						spriteType = "GFX_provinceView_morale_frame_long"
+						position = { x = 155 y = 119 }
+					}
+
+					guiButtonType = {
+						name = "custom_monument_gui_destroy_channel_tunnel_cancel"
+						scripted = yes
+						position = { x=265 y=115 }
+						spriteType = "GFX_alerticon_dismiss_always"
+					}
+				}
+			}
+
+			windowType = {
+				name = "general_buildings_window"
+				backGround=""
+				position = { x=1 y=115 }
+				size = { x=475 y=480 }
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				moveable = 0
+				Orientation = "UPPER_LEFT"
+
+				iconType =
+				{
+					name ="provinceview_building_bg"
+					spriteType = "GFX_provinceview_building_bg"
+					position = { x= -3 y = 0 }
+				}
+
+				instantTextBoxType = {
+					name = "province_improvements_label"
+					position = { x = 30 y = 25 }
+					textureFile = ""
+					font = "vic_22"
+					borderSize = {x = 2 y = 2}
+					text = "MACRO_PROVINCE_IMPROVEMENTS"
+					maxWidth = 256
+					maxHeight = 32
+					format = left
+				}
+
+				guiButtonType = {
+					name = "center_of_trade_button"
+					position = { x=174 y=180 }
+					spriteType = "GFX_center_of_trade_inland_1"
+				}
+
+				iconType = {
+					name = "center_of_trade_icon"
+					position = { x=174 y=180 }
+					spriteType = "GFX_center_of_trade_inland_1"
+				}
+
+			}
+
+			windowType = {
+				name = "province_values_window"
+				backGround=""
+				position = { x=4 y=354 }
+				size = { x=475 y=480 }
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				moveable = 0
+				Orientation = "UPPER_LEFT"
+
+				instantTextBoxType = {
+					name = "province_values_label"
+					position = { x = 30 y = 0 }
+					textureFile = ""
+					font = "vic_22"
+					borderSize = {x = 2 y = 2}
+					text = "PROVINCE_VALUES"
+					maxWidth = 256
+					maxHeight = 32
+					format = left
+				}
+
+				guiButtonType =
+				{
+					name ="expand_infrastructure_button"
+					position = { x= 240 y = 5 }
+					quadTextureSprite ="GFX_exploit_button_expand_infrastructure"
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = ""
+					buttonFont = "vic_18"
+					Orientation = "UPPER_LEFT"
+				}
+                
+				guiButtonType =
+				{
+					name ="reduce_infrastructure_button"
+					position = { x= 280 y = 5 }
+					quadTextureSprite ="GFX_exploit_button_reduce_infrastructure"
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = ""
+					buttonFont = "vic_18"
+					Orientation = "UPPER_LEFT"
+				}
+                
+				iconType =
+				{
+					name ="naval_forcelimit_icon"
+					spriteType = "GFX_naval_forcelimit_icon"
+					position = { x= 33 y = 82 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "naval_forcelimit_value"
+					position = { x = 72 y = 87 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "0"
+					maxWidth = 40
+					maxHeight = 20
+					format = right
+				}
+
+				iconType =
+				{
+					name ="land_forcelimit_icon"
+					spriteType = "GFX_land_forcelimit_icon"
+					position = { x= 130 y = 82 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "land_forcelimit_value"
+					position = { x = 148 y = 87 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "0"
+					maxWidth = 60
+					maxHeight = 20
+					format = right
+				}
+				
+				iconType =
+				{
+					name = "province_governing_cost_icon"
+					spriteType = "GFX_province_governing_cost"
+					position = { x= 224 y = 82  }
+					Orientation = "UPPER_LEFT"
+				}
+				
+				instantTextBoxType = {
+					name = "capacity_value"
+					position = { x = 253 y = 87 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "200"
+					maxWidth = 50
+					maxHeight = 20
+					format = right
+				}
+
+				iconType =
+				{
+					name = "center_of_revolution"
+					spriteType = "GFX_center_of_revolution"
+					position = { x = 28 y = 141 }
+					scale = 1
+				}
+
+				instantTextBoxType = {
+					name = "center_of_revolution_label"
+					position = { x = 90 y = 140 }
+					textureFile = ""
+					font = "vic_22"
+					borderSize = {x = 2 y = 2}
+					text = "CENTER_OF_REVOLUTION"
+					maxWidth = 230
+					maxHeight = 32
+					format = left
+				}
+
+				instantTextBoxType = {
+					name = "spreading_to_provinces_label"
+					position = { x = 93 y = 165 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "SPREADING_TO_NEARBY_PROVINCES"
+					maxWidth = 230
+					maxHeight = 32
+					format = left
+				}
+
+				instantTextBoxType = {
+					name = "spreading_revolution_label"
+					position = { x = 90 y = 140 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "REVOLUTION_IS_SPREADING"
+					maxWidth = 230
+					maxHeight = 32
+					format = left
+				}
+
+				instantTextBoxType = {
+					name = "spreaded_revolution_label"
+					position = { x = 90 y = 140 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "REVOLUTION_HAS_SPREADED"
+					maxWidth = 230
+					maxHeight = 32
+					format = left
+				}
+
+				iconType =
+				{
+					name = "revolution_spread"
+					spriteType = "GFX_revolution_spreading"
+					position = { x = 28 y = 141 }
+				}
+
+				iconType =
+				{
+					name ="revolution_progress"
+					spriteType = "GFX_provinceView_revolution_progressbar"
+					position = { x = 99 y = 172 }
+				}
+
+				iconType =
+				{
+					name ="revolution_progress_frame"
+					spriteType = "GFX_provinceView_morale_frame_medium"
+					position = { x = 90 y = 168 }
+				}
+
+				instantTextBoxType = {
+					name = "revolution_progress_label"
+					position = { x = 150 y = 190 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "0%"
+					maxWidth = 230
+					maxHeight = 32
+					format = left
+				}
+	
+				iconType =
+				{
+					name ="build_allowed_icon"
+					spriteType = "GFX_technologyView_show_buildings"
+					position = { x= 32 y = 35 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "build_allowed_value"
+					position = { x = 66 y = 40}
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "12.72"
+					maxWidth = 44
+					maxHeight = 20
+					format = right
+				}
+
+
+				iconType =
+				{
+					name ="build_cost_modifier_icon"
+					spriteType = "GFX_build_cost"
+					position = { x= 129 y = 39 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "build_cost_modifier"
+					position = { x = 150 y = 40 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "12.72"
+					maxWidth = 60
+					maxHeight = 20
+					format = right
+				}
+
+				iconType =
+				{
+					name ="build_time_modifier_icon"
+					spriteType = "GFX_build_time"
+					position = { x= 224 y = 36 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "build_time_modifier"
+					position = { x = 245 y = 40 }
+					textureFile = ""
+					font = "vic_18"
+					borderSize = {x = 2 y = 2}
+					text = "12.72"
+					maxWidth = 60
+					maxHeight = 20
+					format = right
+				}
+			}
+			
+			## EE Buildings Stuff
+			
+			
+			
+			guiButtonType =
+			{
+				name ="ME_build_CoT"
+				position = { x=175 y=295 }
+				spriteType = "GFX_center_of_trade_inland_1"
+				scripted = yes
+				tooltipText =""
+				delayedTooltipText = ""
+				buttonFont = "vic_18"
+				Orientation = "UPPER_LEFT"
+			}
+
+			guiButtonType = {
+				name = "building_close_button"
+				position = { x = 304 y = 120 }
+				quadTextureSprite ="GFX_closebutton2"
+				clicksound = close_window
+			}
+
+			windowType = {
+				name = "select_building"
+				backGround=""
+				position = { x=7 y=7 }
+				size = { x=345 y=465 }
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				moveable = 0
+				Orientation = "UPPER_LEFT"
+
+				iconType =
+				{
+					name ="background"
+					spriteType = "GFX_select_building_small_bg"
+					position = { x= 0 y = 0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+
+				guiButtonType = {
+					name = "back_button"
+					position = { x=160 y =530}
+					quadTextureSprite ="GFX_standard_button_71"
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "DOMESTIC_BACK"
+					buttonFont = "vic_18"
+					shortcut = "ESCAPE"
+					clicksound = back_click
+				}
+
+				listboxType = {
+					name = "list1"
+					position = { x = 14 y = 44 }
+					backGround=""
+					size = { x=348 y = 520}
+					Orientation = "UPPER_LEFT"
+					horizontal = 0
+					spacing = 2
+					scrollbartype = "standardlistbox_slider"
+					borderSize = {x = 0 y = 0}
+				}
+
+				instantTextBoxType = {
+					name = "window_title"
+					position = { x = 0 y = 5 }
+					textureFile = ""
+					font = "vic_29s"
+					borderSize = {x = 4 y = 4}
+					text = "LEDGER_BUILDINGS"
+					maxWidth = 390
+					maxHeight = 32
+					format = centre
+				}
+			}
+
+			#### for larger resolutions ####
+
+			windowType = {
+				name = "select_building_large"
+				backGround=""
+				position = { x=7 y=7 }
+				size = { x=345 y=465 }
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				moveable = 0
+				Orientation = "UPPER_LEFT"
+
+				iconType =
+				{
+					name ="background"
+					spriteType = "gfx_select_building_large_bg2"
+					position = { x= 0 y = 0 }
+					Orientation = "UPPER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "back_button"
+					position = { x=160 y =534}
+					quadTextureSprite ="GFX_standard_button_71"
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "DOMESTIC_BACK"
+					buttonFont = "vic_18"
+					shortcut = "ESCAPE"
+					clicksound = back_click
+				}
+
+				listboxType = {
+					name = "list1"
+					position = { x = 14 y = 47 }
+					backGround=""
+					size = { x=348 y = 624}
+					Orientation = "UPPER_LEFT"
+					horizontal = 0
+					spacing = 2
+					scrollbartype = "standardlistbox_slider"
+					borderSize = {x = 0 y = 0}
+				}
+
+				instantTextBoxType = {
+					name = "window_title"
+					position = { x = 0 y = 5 }
+					textureFile = ""
+					font = "vic_29s"
+					borderSize = {x = 4 y = 4}
+					text = "LEDGER_BUILDINGS"
+					maxWidth = 390
+					maxHeight = 32
+					format = centre
+				}
+			}
+
+			windowType = {
+				name = "natives_buildings_window"
+				backGround=""
+				position = {  x=1 y=209 }
+				size = { x=475 y=270 }
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				moveable = 0
+				Orientation = "UPPER_LEFT"
+
+				iconType =
+				{
+					name ="provinceview_native_building_bg_small"
+					spriteType = "GFX_select_building_small_bg2"
+					position = { x= 6 y = 0 }
+				}
+
+				guiButtonType = {
+					name = "sort_name"
+					position = { x = 70 y = 40 }
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "NAME"
+					buttonFont = "vic_18"
+					quadTextureSprite ="GFX_sort_160"
+					Orientation = "UPPER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "sort_cost"
+					position = { x = 230 y = 42 }
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "PEACE_COST"
+					buttonFont = "vic_18"
+					quadTextureSprite ="GFX_sort_64"
+					Orientation = "UPPER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "sort_time"
+					position = { x = 295 y = 42 }
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "TIME"
+					buttonFont = "vic_18"
+					quadTextureSprite ="GFX_sort_81"
+					Orientation = "UPPER_LEFT"
+				}
+
+				listboxType = {
+					name = "buildings"
+					position = { x = 12 y = 67 }
+					backGround=""
+					size = { x=365 y = 210}
+					Orientation = "UPPER_LEFT"
+					horizontal = 0
+					spacing = 0
+					scrollbartype = "standardlistbox_slider"
+					borderSize = {x = 0 y = 0}
+				}
+
+								#COPIED PROVINCE VALUES WINDOW
+
+				windowType = {
+					name = "province_values_window"
+					backGround=""
+					position = { x=0 y=290 }
+					size = { x=475 y=586 }
+					dontRender = ""
+					horizontalBorder= ""
+					verticalBorder= ""
+					fullScreen = no
+					moveable = 0
+					Orientation = "UPPER_LEFT"
+
+					instantTextBoxType = {
+						name = "province_values_label"
+						position = { x = 30 y = 2 }
+						textureFile = ""
+						font = "vic_22"
+						borderSize = {x = 2 y = 2}
+						text = "PROVINCE_VALUES"
+						maxWidth = 256
+						maxHeight = 32
+						format = left
+					}
+
+
+					iconType =
+					{
+						name ="naval_forcelimit_icon"
+						spriteType = "GFX_naval_forcelimit_icon"
+						position = { x= 30 y = 33 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "naval_forcelimit_value"
+						position = { x = 62 y = 38 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "0"
+						maxWidth = 54
+						maxHeight = 20
+						format = center
+					}
+
+					iconType =
+					{
+						name ="land_forcelimit_icon"
+						spriteType = "GFX_land_forcelimit_icon"
+						position = { x= 120 y = 33 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "land_forcelimit_value"
+						position = { x = 152 y = 38 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "0"
+						maxWidth = 54
+						maxHeight = 20
+						format = center
+					}
+					
+					
+				
+	
+				
+					
+					iconType =
+					{
+						name ="governing_capacity_icon"
+						spriteType = "GFX_governing_capacity"
+						position = { x= 205 y = -12  }
+						Orientation = "UPPER_LEFT"
+						scale = 0.75
+					}
+					
+					instantTextBoxType = {
+						name = "capacity_value"
+						position = { x = 237 y = 0 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "200"
+						maxWidth = 40
+						maxHeight = 20
+						format = right
+					}
+
+					iconType =
+					{
+						name ="build_allowed_icon"
+						spriteType = "GFX_technologyView_show_buildings"
+						position = { x= 210 y = 32 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "build_allowed_value"
+						position = { x = 242 y = 38 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "12.72"
+						maxWidth = 54
+						maxHeight = 20
+						format = center
+					}
+
+
+					iconType =
+					{
+						name ="build_cost_modifier_icon"
+						spriteType = "GFX_build_cost"
+						position = { x= 300 y = 34 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "build_cost_modifier"
+						position = { x = 332 y = 38 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "12.72"
+						maxWidth = 54
+						maxHeight = 20
+						format = center
+					}
+					iconType =
+					{
+						name ="build_time_modifier_icon"
+						spriteType = "GFX_build_time"
+						position = { x= 300 y = -4 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "build_time_modifier"
+						position = { x = 332 y = 0 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "12.72"
+						maxWidth = 44
+						maxHeight = 20
+						format = right
+					}
+				}
+
+			}
+
+			##### for larger resolutions ###
+
+			windowType = {
+				name = "natives_buildings_window_large"
+				backGround=""
+				position = {  x=1 y=150 }
+				size = { x=475 y=270 }
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				moveable = 0
+				Orientation = "UPPER_LEFT"
+
+				iconType =
+				{
+					name ="provinceview_native_building_bg_large"
+					spriteType = "GFX_select_building_small_bg2"
+					position = { x= 6 y = 0 }
+				}
+
+				guiButtonType = {
+					name = "sort_name"
+					position = { x = 70 y = 40 }
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "NAME"
+					buttonFont = "vic_18"
+					quadTextureSprite ="GFX_sort_160"
+					Orientation = "UPPER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "sort_cost"
+					position = { x = 230 y = 42 }
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "PEACE_COST"
+					buttonFont = "vic_18"
+					quadTextureSprite ="GFX_sort_64"
+					Orientation = "UPPER_LEFT"
+				}
+
+				guiButtonType = {
+					name = "sort_time"
+					position = { x = 295 y = 42 }
+					tooltip = ""
+					tooltipText =""
+					delayedTooltipText = ""
+					buttonText = "TIME"
+					buttonFont = "vic_18"
+					quadTextureSprite ="GFX_sort_81"
+					Orientation = "UPPER_LEFT"
+				}
+
+				listboxType = {
+					name = "buildings"
+					position = { x = 12 y = 67 }
+					backGround=""
+					size = { x=365 y = 210}
+					Orientation = "UPPER_LEFT"
+					horizontal = 0
+					spacing = 0
+					scrollbartype = "standardlistbox_slider"
+					borderSize = {x = 0 y = 0}
+				}
+
+				#COPIED PROVINCE VALUES WINDOW
+
+				windowType = {
+					name = "province_values_window"
+					backGround=""
+					position = { x=0 y=-310 }
+					size = { x=475 y=586 }
+					dontRender = ""
+					horizontalBorder= ""
+					verticalBorder= ""
+					fullScreen = no
+					moveable = 0
+					Orientation = "UPPER_LEFT"
+
+					instantTextBoxType = {
+						name = "province_values_label"
+						position = { x = 30 y = 602 }
+						textureFile = ""
+						font = "vic_22"
+						borderSize = {x = 2 y = 2}
+						text = "PROVINCE_VALUES"
+						maxWidth = 256
+						maxHeight = 32
+						format = left
+					}
+
+					iconType =
+					{
+						name ="naval_forcelimit_icon"
+						spriteType = "GFX_naval_forcelimit_icon"
+						position = { x= 30 y = 634 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "naval_forcelimit_value"
+						position = { x = 62 y = 638 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "0"
+						maxWidth = 54
+						maxHeight = 20
+						format = center
+					}
+
+					iconType =
+					{
+						name ="land_forcelimit_icon"
+						spriteType = "GFX_land_forcelimit_icon"
+						position = { x= 120 y = 634 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "land_forcelimit_value"
+						position = { x = 152 y = 638 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "0"
+						maxWidth = 54
+						maxHeight = 20
+						format = center
+					}
+
+	
+				
+				
+					iconType =
+					{
+						name ="governing_capacity_icon"
+						spriteType = "GFX_governing_capacity"
+						position = { x= 212 y = 599 }
+						Orientation = "UPPER_LEFT"
+					}
+					
+					instantTextBoxType = {
+						name = "capacity_value"
+						position = { x = 245 y = 600 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "200"
+						maxWidth = 40
+						maxHeight = 20
+						format = right
+					}
+	
+					iconType =
+					{
+						name ="build_allowed_icon"
+						spriteType = "GFX_technologyView_show_buildings"
+						position = { x= 210 y = 634 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "build_allowed_value"
+						position = { x = 242 y = 638 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "12.72"
+						maxWidth = 54
+						maxHeight = 20
+						format = center
+					}
+
+
+					iconType =
+					{
+						name ="build_cost_modifier_icon"
+						spriteType = "GFX_build_cost"
+						position = { x= 300 y = 634 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "build_cost_modifier"
+						position = { x = 332 y = 638 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "12.72"
+						maxWidth = 54
+						maxHeight = 20
+						format = center
+					}
+
+					iconType =
+					{
+						name ="build_time_modifier_icon"
+						spriteType = "GFX_build_time"
+						position = { x= 300 y = 596 }
+						Orientation = "UPPER_LEFT"
+					}
+
+					instantTextBoxType = {
+						name = "build_time_modifier"
+						position = { x = 332 y = 600 }
+						textureFile = ""
+						font = "vic_18"
+						borderSize = {x = 2 y = 2}
+						text = "12.72"
+						maxWidth = 54
+						maxHeight = 20
+						format = center
+					}
+				}
+			}
+						
 		}
 
 
@@ -946,6 +1957,28 @@ guiTypes = {
 				position = { x = 20 y = 328 }
 				hint_tag = "hint_hre"
 				frame = 1
+			}
+
+			guiButtonType = {
+				name ="scripted_trade_company_button_add"
+				scripted = yes
+				quadTextureSprite = "GFX_tradecompany_indicators"
+				position = { x = 20 y = 328 }
+			}
+
+			guiButtonType = {
+				name ="scripted_trade_company_button_remove"
+				scripted = yes
+				quadTextureSprite = "GFX_tradecompany_indicators"
+				position = { x = 20 y = 328 }
+			}
+
+			iconType = {
+				name ="scripted_trade_company_icon"
+				scripted = yes
+				spriteType = "GFX_tradecompany_indicators"
+				position = { x = 32 y = 328 }
+				Orientation = "UPPER_LEFT"
 			}
 
 			guiButtonType = {
@@ -1358,6 +2391,27 @@ guiTypes = {
 				buttonFont = "vic_18"
 				Orientation = "UPPER_LEFT"
 			}
+			
+			### Custom UI
+			guiButtonType = {
+				name ="debug_menu_open_button"
+				scripted = yes
+				quadTextureSprite = "button_type_1"
+				buttonFont = "vic_18"
+				buttonText = "debug_menu_open_text"
+
+				position = { x= 315 y = 285 }
+			}
+			
+			### Custom UI
+			guiButtonType = {
+				name ="transfer_occupation_from_ally_button"
+				scripted = yes
+				quadTextureSprite = "GFX_request_occupation_button"
+				buttonFont = "vic_18"
+
+				position = { x= 310 y = 245 }
+			}
 
 			guiButtonType =
 			{
@@ -1626,7 +2680,6 @@ guiTypes = {
 					clicksound = close_window
 				}	
 			}
-
 			iconType = {
 				name ="defensiveness_icon"
 				spriteType = "GFX_fort_defense_icon"
@@ -2585,6 +3638,116 @@ guiTypes = {
 				}
 			}
 
+			### Feitorias
+			
+			guiButtonType = {
+				name ="feitoria_open_button"
+				scripted = yes
+				quadTextureSprite ="GFX_feitoria_button"
+				position = { x = 195 y = 520 }
+			}
+			
+			iconType = {
+				name ="feitoria_bg"
+				scripted = yes
+				spriteType = "GFX_feitoria_bg"
+				position = { x = -2 y = 478 }
+			}
+			
+			iconType = {
+				name ="feitoria_bg_icon_1"
+				scripted = yes
+				spriteType = "GFX_feitoria_bg_icon_1"
+				position = { x = -2 y = 478 }
+			}
+			
+			iconType = {
+				name ="feitoria_bg_icon_2"
+				scripted = yes
+				spriteType = "GFX_feitoria_bg_icon_2"
+				position = { x = -2 y = 478 }
+			}
+			
+			iconType = {
+				name ="feitoria_bg_icon_3"
+				scripted = yes
+				spriteType = "GFX_feitoria_bg_icon_3"
+				position = { x = -2 y = 478 }
+			}
+			
+			guiButtonType = {
+				name ="feitoria_close_button"
+				scripted = yes
+				quadTextureSprite ="GFX_closebutton2"
+				position = { x = 460 y = 477 }
+				scale = 0.8
+			}
+			
+			instantTextBoxType = {
+				name = "feitoria_name"
+				scripted = yes
+				position = { x = 26 y = 479 }
+				font = "vic_18"
+				borderSize = {x = 2 y = 2}
+				maxWidth = 80
+				maxHeight = 20
+				format = left
+			}
+			
+			iconType = {
+				name = "feitoria_bar"
+				position = { x = 31 y = 517 }
+				spriteType = "GFX_feitoria_bar"
+				scripted = yes
+			}
+			
+			iconType = {
+				name = "feitoria_bar_frame"
+				position = { x = 16 y = 515 }
+				spriteType = "GFX_feitoria_bar_frame"
+				scripted = yes
+				alwaystransparent = yes
+			}
+			
+			iconType = {
+				name = "feitoria_arrows"
+				position = { x = 269 y = 517 }
+				spriteType = "GFX_feitoria_arrows_strip"
+				scripted = yes
+			}
+			
+			guiButtonType = {
+				name ="feitoria_promote_investment"
+				scripted = yes
+				quadTextureSprite ="GFX_feitoria_promote_investment"
+				position = { x = 267 y = 540 }
+			}
+			
+			iconType = {
+				name ="feitoria_promote_investment_glow"
+				scripted = yes
+				spriteType = "GFX_country_subject_button_small_glow"
+				position = { x = 267 y = 540 }
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+			
+			guiButtonType = {
+				name ="feitoria_spend_investment"
+				scripted = yes
+				quadTextureSprite ="GFX_feitoria_purchase_investment"
+				position = { x = 306 y = 521 }
+			}
+			
+			guiButtonType = {
+				name ="feitoria_spend_investment_tc"
+				scripted = yes
+				quadTextureSprite ="GFX_center_of_trade_coastal_3"
+				position = { x = 354 y = 513 }
+			}
+			
+			###
+			
 			iconType =
 			{
 				name = "loot_icon"
@@ -2635,6 +3798,1353 @@ guiTypes = {
 				name = "buildings_button"
 				position = { x=478 y=144}
 				quadTextureSprite ="GFX_build_interface_building_tab"
+			}
+			
+			windowType = { # EE debug window
+				name = "debugging_custom_window"
+				scripted = yes
+				backGround=""
+				position = { x=640 y=-130 }
+				size = { x=315 y=501 }
+				moveable = 0
+				dontRender = ""
+				horizontalBorder= ""
+				verticalBorder= ""
+				fullScreen = no
+				Orientation = "UPPER_RIGHT"
+				#Orientation = "CENTER"
+				#Debug Menu
+				iconType = {
+					name ="debug_menu_background_bg"
+					scripted = yes
+					spriteType = "GFX_debug_background"
+					position = { x= 477 y = 75 }
+				}
+				
+				guiButtonType = {
+					name ="debugging_target_shield"
+					scripted = yes
+					quadTextureSprite= "GFX_shield_small"
+					position = { x= 495 y = 85 }
+				}
+				
+				guiButtonType = {
+					name ="debugging_target_set"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "Set"
+					position = { x= 624 y = 88 }
+					shortcut = "["
+				}
+				
+				guiButtonType = {
+					name ="debugging_target_reset"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "Reset"
+					position = { x= 704 y = 88 }
+					shortcut = "]"
+				}
+				
+				instantTextBoxType = {
+					name = "debug_menu_header_text"
+					scripted = yes
+					position = { x = 538 y = 90 }
+					textureFile = ""
+					font = "vic_22"
+					borderSize = {x = 2 y = 2}
+					text = "Debug Menu"
+					maxWidth = 120
+					maxHeight = 32
+					format = left
+				}
+				
+				# Y Space between = 38
+				
+				guiButtonType = {
+					name ="debug_transfer_occupation_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_transfer_occupation_text"
+					position = { x = 517 y = 129 }
+					shortcut = "c"
+				}
+				
+				guiButtonType = {
+					name ="debug_claim_button"
+					scripted = yes
+					quadTextureSprite ="GFX_button_straight_96_32"
+					buttonFont = "vic_18"
+					buttonText = "Claim"
+					position = { x = 540 y = 157 }
+					shortcut = "ctrl+c"
+				}
+				
+				guiButtonType = {
+					name ="debug_core_button"
+					scripted = yes
+					quadTextureSprite ="GFX_button_straight_96_32"
+					buttonFont = "vic_18"
+					buttonText = "Core"
+					position = { x = 666 y = 157 }
+					shortcut = "shift+c"
+				}
+				
+				guiButtonType = {
+					name ="debug_own_button"
+					scripted = yes
+					quadTextureSprite ="GFX_button_straight_96_32"
+					buttonFont = "vic_18"
+					buttonText = "Own"
+					position = { x = 540 y = 185 }
+					shortcut = "ctrl+x"
+				}
+				
+				guiButtonType = {
+					name ="debug_own_core_button"
+					scripted = yes
+					quadTextureSprite ="GFX_button_straight_96_32"
+					buttonFont = "vic_18"
+					buttonText = "Own Core"
+					position = { x = 666 y = 185 }
+					shortcut = "shift+x"
+				}
+				
+				guiButtonType = {
+					name ="debug_decolonize_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "Colonize"
+					position = { x = 517 y = 213 }
+				}
+				
+				guiButtonType = {
+					name ="debug_culture_convert_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_culture_convert_text"
+					position = { x = 517 y = 241 }
+				}
+				
+				guiButtonType = {
+					name ="debug_convert_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_convert_text"
+					position = { x = 517 y = 269 }
+				}
+				
+				guiButtonType = {
+					name ="debug_change_trade_good_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_change_trade_good_text"
+					position = { x = 517 y = 297 }
+				}
+				
+				guiButtonType = {
+					name ="debug_add_building_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_add_building_text"
+					position = { x = 517 y = 325 }
+				}
+				
+				guiButtonType = {
+					name ="debug_add_province_modifier_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_add_province_modifier_text"
+					position = { x = 517 y = 353 }
+				}
+				
+				## same line
+				
+				guiButtonType = {
+					name ="debug_change_adm_dev_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "debug_change_adm_dev_text"
+					position = { x = 517 y = 381 }
+				}
+				
+				guiButtonType = {
+					name ="debug_change_dip_dev_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "debug_change_dip_dev_text"
+					position = { x = 596 y = 381 }
+				}
+				
+				guiButtonType = {
+					name ="debug_change_mil_dev_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "debug_change_mil_dev_text"
+					position = { x = 675 y = 381 }
+				}
+				
+				guiButtonType = {
+					name ="debug_toggle_raise_lower_dev_button"
+					scripted = yes
+					quadTextureSprite ="GFX_empty_toggle_button_small"
+					buttonFont = "vic_18"
+					position = { x = 753 y = 381 }
+				}
+				
+				iconType = {
+					name ="debug_toggle_raise_lower_dev_indicator"
+					scripted = yes
+					spriteType = "GFX_ticking_war_score"
+					position = { x = 754 y = 383 }
+					alwaystransparent = yes
+				}
+				
+				
+				## same line
+				
+				guiButtonType = {
+					name ="debug_build_inf_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "debug_inf_icon"
+					position = { x = 517 y = 409 }
+				}
+				
+				guiButtonType = {
+					name ="debug_build_cav_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "debug_cav_icon"
+					position = { x = 596 y = 409 }
+				}
+				
+				guiButtonType = {
+					name ="debug_build_can_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "debug_can_icon"
+					position = { x = 675 y = 409 }
+				}
+				
+				guiButtonType = {
+					name ="debug_build_to_force_land_button"
+					scripted = yes
+					quadTextureSprite ="GFX_empty_toggle_button_small"
+					buttonFont = "vic_18"
+					buttonText = "debug_man_icon"
+					position = { x = 753 y = 409 }
+				}
+				## same line
+				
+				guiButtonType = {
+					name ="debug_build_hev_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "debug_hev_icon"
+					position = { x = 517 y = 437 }
+				}
+				
+				guiButtonType = {
+					name ="debug_build_lig_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "debug_lig_icon"
+					position = { x = 596 y = 437 }
+				}
+				
+				guiButtonType = {
+					name ="debug_build_gal_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "debug_gal_icon"
+					position = { x = 675 y = 437 }
+				}
+				
+				guiButtonType = {
+					name ="debug_build_to_force_sea_button"
+					scripted = yes
+					quadTextureSprite ="GFX_empty_toggle_button_small"
+					buttonFont = "vic_18"
+					buttonText = "debug_sai_icon"
+					position = { x = 753 y = 437 }
+				}
+				
+				guiButtonType = {
+					name ="debug_make_subject_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_make_subject_text"
+					position = { x = 517 y = 129 }
+				}
+				
+				guiButtonType = {
+					name ="debug_convert_country_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_convert_country_text"
+					position = { x = 517 y = 157 }
+				}
+				
+				guiButtonType = {
+					name ="debug_integrate_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_integrate_text"
+					position = { x = 517 y = 185 }
+				}
+				
+				guiButtonType = {
+					name ="debug_change_tag_button"
+					scripted = yes
+					quadTextureSprite ="GFX_ledger_index_category_button"
+					buttonFont = "vic_18"
+					buttonText = "debug_change_tag_text"
+					position = { x = 517 y = 437 } #538
+				}
+				
+				guiButtonType = {
+					name ="debug_prev_page_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "Previous"
+					position = { x = 532 y = 468 }
+					shortcut = "ctrl+["
+				}
+				
+				guiButtonType = {
+					name ="debug_toggle_state_scope_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "State   "
+					position = { x = 611 y = 468 }
+				}
+				iconType = {
+					name ="debug_toggle_state_scope_indicator"
+					scripted = yes
+					spriteType = "GFX_ticking_war_score"
+					position = { x = 655 y = 472 }
+					alwaystransparent = yes
+				}
+				
+				guiButtonType = {
+					name ="debug_next_page_button"
+					scripted = yes
+					quadTextureSprite ="GFX_standard_button_71"
+					buttonFont = "vic_18"
+					buttonText = "Next"
+					position = { x = 690 y = 468 }
+					shortcut = "ctrl+]"
+				}
+				
+				windowType = { # EE debug building window
+					name = "debugging_custom_window_buildings"
+					scripted = yes
+					backGround=""
+					position = { x=-716 y=-40 }
+					size = { x=315 y=501 }
+					moveable = 0
+					dontRender = ""
+					horizontalBorder= ""
+					verticalBorder= ""
+					fullScreen = no
+					
+					iconType = {
+						name ="debug_buildings_background"
+						scripted = yes
+						spriteType = "gfx_select_debug_building_large_bg2"
+						position = { x= 803 y = 17 }
+						Orientation = "UPPER_LEFT"
+					}
+					###
+
+					guiButtonType = {
+						name = "debug_buildings_build_marketplace"
+						scripted = yes
+						position = { x = 822 y = 89 }
+						quadTextureSprite = "GFX_marketplace" #Placeholder, real sprite is decided by game (based on button name).
+					}
+
+					guiButtonType = {
+						name = "debug_buildings_build_trade_depot"
+						scripted = yes
+						position = { x = 874 y = 89 }
+						quadTextureSprite = "GFX_trade_depot" #Placeholder, real sprite is decided by game (based on button name).
+					}
+
+					guiButtonType = {
+						name = "debug_buildings_build_stock_exchange"
+						scripted = yes
+						position = { x = 926 y = 89 }
+						quadTextureSprite = "GFX_stock_exchange" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_town_hall"
+						scripted = yes
+						position = { x = 1081 y = 89 }
+						quadTextureSprite = "GFX_town_hall" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_courthouse"
+						scripted = yes
+						position = { x = 1029 y = 89 }
+						quadTextureSprite = "GFX_courthouse" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_university"
+						scripted = yes
+						position = { x = 1133 y = 89 }
+						quadTextureSprite = "GFX_university" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_dock"
+						scripted = yes
+						position = { x = 822 y = 186 }
+						quadTextureSprite = "GFX_dock" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_drydock"
+						scripted = yes
+						position = { x = 874 y = 186 }
+						quadTextureSprite = "GFX_drydock" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_shipyard"
+						scripted = yes
+						position = { x = 926 y = 186 }
+						quadTextureSprite = "GFX_shipyard" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_grand_shipyard"
+						scripted = yes
+						position = { x = 978 y = 186 }
+						quadTextureSprite = "GFX_grand_shipyard" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_workshop"
+						scripted = yes
+						position = { x = 1081 y = 186 }
+						quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_counting_house"
+						scripted = yes
+						position = { x = 1133 y = 186 }
+						quadTextureSprite = "GFX_workshop" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_barracks"
+						scripted = yes
+						position = { x = 822 y = 283 }
+						quadTextureSprite = "GFX_barracks" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_training_fields"
+						scripted = yes
+						position = { x = 874 y = 283 }
+						quadTextureSprite = "GFX_training_fields" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_regimental_camp"
+						scripted = yes
+						position = { x = 926 y = 283 }
+						quadTextureSprite = "GFX_regimental_camp" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_conscription_center"
+						scripted = yes
+						position = { x = 978 y = 283 }
+						quadTextureSprite = "GFX_conscription_center" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_temple"
+						scripted = yes
+						position = { x = 1081 y = 283 }
+						quadTextureSprite = "GFX_temple" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_cathedral"
+						scripted = yes
+						position = { x = 1133 y = 283 }
+						quadTextureSprite = "GFX_cathedral" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_fort_15th"
+						scripted = yes
+						position = { x = 822 y = 380 }
+						quadTextureSprite = "GFX_fort_15th" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_fort_16th"
+						scripted = yes
+						position = { x = 874 y = 380 }
+						quadTextureSprite = "GFX_fort_16th" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_fort_17th"
+						scripted = yes
+						position = { x = 926 y = 380 }
+						quadTextureSprite = "GFX_fort_17th" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_fort_18th"
+						scripted = yes
+						position = { x = 978 y = 380 }
+						quadTextureSprite = "GFX_fort_18th" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_coastal_defence"
+						scripted = yes
+						position = { x = 1081 y = 380 }
+						quadTextureSprite = "GFX_coastal_defence" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_naval_battery"
+						scripted = yes
+						position = { x = 1133 y = 380 }
+						quadTextureSprite = "GFX_naval_battery" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_manufactory"
+						scripted = yes
+						position = { x = 822 y = 477 }
+						quadTextureSprite = "GFX_manufactory" #Placeholder, real sprite is decided by game (based on button name).
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_ramparts"
+						scripted = yes
+						position = { x = 874 y = 477 }
+						quadTextureSprite = "GFX_ramparts"
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_impressment_offices"
+						scripted = yes
+						position = { x = 926 y = 477 }
+						quadTextureSprite = "GFX_impressment_offices"
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_state_house"
+						scripted = yes
+						position = { x = 978 y = 477 }
+						quadTextureSprite = "GFX_state_house"
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_soldier_households"
+						scripted = yes
+						position = { x = 1030 y = 477 }
+						quadTextureSprite = "GFX_soldier_households"
+					}
+					
+					guiButtonType = {
+						name = "debug_buildings_build_furnace"
+						scripted = yes
+						position = { x = 1082 y = 477 }
+						quadTextureSprite = "GFX_furnace"
+					}
+					
+					
+					
+					guiButtonType = {
+						name = "debug_buildings_build_cot"
+						scripted = yes
+						position = { x = 820 y = 525 }
+						quadTextureSprite = "GFX_center_of_trade_inland_1"
+					}
+					
+					guiButtonType = {
+						name ="debug_toggle_raise_lower_cot_button"
+						scripted = yes
+						quadTextureSprite ="GFX_empty_toggle_button_small"
+						buttonFont = "vic_18"
+						position = { x = 943 y = 540 }
+					}
+					iconType = {
+						name ="debug_toggle_raise_lower_cot_indicator"
+						scripted = yes
+						spriteType = "GFX_ticking_war_score"
+						position = { x = 943 y = 542 }
+						alwaystransparent = yes
+					}
+					
+					guiButtonType = {
+						name ="debug_toggle_instant_great_project_button"
+						scripted = yes
+						quadTextureSprite ="GFX_great_project_level_icon_upgrade_build"
+						buttonFont = "vic_18"
+						position = { x = 974 y = 537 }
+					}
+					iconType = {
+						name ="debug_toggle_instant_great_project_indicator"
+						scripted = yes
+						spriteType = "GFX_ticking_war_score"
+						position = { x = 1015 y = 541 }
+						alwaystransparent = yes
+					}
+				}
+			
+				windowType = { # EE debug convert window
+					name = "debugging_custom_window_convert"
+					scripted = yes
+					backGround=""
+					position = { x=-634 y=-40 }
+					size = { x=315 y=501 }
+					moveable = 0
+					dontRender = ""
+					horizontalBorder= ""
+					verticalBorder= ""
+					fullScreen = no
+					
+					### convert 
+					iconType = {
+						name ="debug_convert_background"
+						scripted = yes
+						spriteType = "GFX_provinceview_institutions_bg"
+						position = { x= 803 y = 75 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_catholic_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "catholic"
+						position = { x = 828 y = 118 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_anglican_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "anglican"
+						position = { x = 828 y = 146 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_hussite_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "hussite"
+						position = { x = 828 y = 174 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_protestant_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "protestant"
+						position = { x = 828 y = 202 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_reformed_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "reformed"
+						position = { x = 828 y = 230 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_orthodox_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "orthodox"
+						position = { x = 828 y = 258 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_coptic_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "coptic"
+						position = { x = 828 y = 286 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_sunni_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "sunni"
+						position = { x = 828 y = 314 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_shiite_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "shiite"
+						position = { x = 828 y = 342 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_ibadi_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "ibadi"
+						position = { x = 828 y = 370 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_buddhism_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "buddhism"
+						position = { x = 828 y = 398 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_vajrayana_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "vajrayana"
+						position = { x = 828 y = 426 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_mahayana_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "mahayana"
+						position = { x = 828 y = 454 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_confucianism_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "confucianism"
+						position = { x = 828 y = 482 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_shinto_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "shinto"
+						position = { x = 828 y = 510 } #538
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_hinduism_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "hinduism"
+						position = { x = 828 y = 118 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_sikhism_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "sikhism"
+						position = { x = 828 y = 146 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_animism_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "animism"
+						position = { x = 828 y = 174 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_shamanism_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "shamanism"
+						position = { x = 828 y = 202 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_totemism_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "totemism"
+						position = { x = 828 y = 230 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_inti_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "inti"
+						position = { x = 828 y = 258 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_nahuatl_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "nahuatl"
+						position = { x = 828 y = 286 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_mesoamerican_religion_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "mesoamerican_religion"
+						position = { x = 828 y = 314 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_norse_pagan_reformed_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "norse_pagan_reformed"
+						position = { x = 828 y = 342 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_tengri_pagan_reformed_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "tengri_pagan_reformed"
+						position = { x = 828 y = 370 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_dreamtime_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "dreamtime"
+						position = { x = 828 y = 398 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_jewish_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "jewish"
+						position = { x = 828 y = 426 }
+					}
+					
+					guiButtonType = {
+						name ="debug_convert_zoroastrian_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "zoroastrian"
+						position = { x = 828 y = 454 }
+					}
+					
+					#
+					
+					guiButtonType = {
+						name ="debug_prev_convert_page_button"
+						scripted = yes
+						quadTextureSprite ="GFX_standard_button_71"
+						buttonFont = "vic_18"
+						buttonText = "Previous"
+						position = { x = 838 y = 538 }
+					}
+					
+					guiButtonType = {
+						name ="debug_next_convert_page_button"
+						scripted = yes
+						quadTextureSprite ="GFX_standard_button_71"
+						buttonFont = "vic_18"
+						buttonText = "Next"
+						position = { x = 996 y = 538 }
+					}
+				}
+				
+				windowType = { # EE debug goods window
+					name = "debugging_custom_window_goods"
+					scripted = yes
+					backGround=""
+					position = { x=-634 y=-40 }
+					size = { x=315 y=501 }
+					moveable = 0
+					dontRender = ""
+					horizontalBorder= ""
+					verticalBorder= ""
+					fullScreen = no
+					
+					### convert 
+					iconType = {
+						name ="debug_goods_background"
+						spriteType = "GFX_provinceview_institutions_bg"
+						position = { x= 803 y = 75 }
+					}
+					
+					### goods
+					guiButtonType = {
+						name ="debug_set_goods_grain_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "grain"
+						position = { x = 828 y = 118 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_wine_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "wine"
+						position = { x = 828 y = 146 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_wool_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "wool"
+						position = { x = 828 y = 174 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_cloth_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "cloth"
+						position = { x = 828 y = 202 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_fish_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "fish"
+						position = { x = 828 y = 230 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_fur_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "fur"
+						position = { x = 828 y = 258 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_salt_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "salt"
+						position = { x = 828 y = 286 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_naval_supplies_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "naval_supplies"
+						position = { x = 828 y = 314 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_copper_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "copper"
+						position = { x = 828 y = 342 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_gold_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "gold"
+						position = { x = 828 y = 370 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_iron_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "iron"
+						position = { x = 828 y = 398 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_slaves_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "slaves"
+						position = { x = 828 y = 426 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_ivory_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "ivory"
+						position = { x = 828 y = 454 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_tea_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "tea"
+						position = { x = 828 y = 482 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_chinaware_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "chinaware"
+						position = { x = 828 y = 510 } #538
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_spices_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "spices"
+						position = { x = 828 y = 118 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_coffee_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "coffee"
+						position = { x = 828 y = 146 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_cotton_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "cotton"
+						position = { x = 828 y = 174 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_sugar_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "sugar"
+						position = { x = 828 y = 202 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_tobacco_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "tobacco"
+						position = { x = 828 y = 230 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_cocoa_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "cocoa"
+						position = { x = 828 y = 258 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_silk_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "silk"
+						position = { x = 828 y = 286 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_dyes_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "dyes"
+						position = { x = 828 y = 314 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_tropical_wood_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "tropical_wood"
+						position = { x = 828 y = 342 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_livestock_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "livestock"
+						position = { x = 828 y = 370 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_incense_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "incense"
+						position = { x = 828 y = 398 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_glass_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "glass"
+						position = { x = 828 y = 426 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_paper_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "paper"
+						position = { x = 828 y = 454 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_gems_button"
+						scripted = yes
+						quadTextureSprite ="GFX_ledger_index_category_button"
+						buttonFont = "vic_18"
+						buttonText = "gems"
+						position = { x = 828 y = 482 }
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_coal_button"
+						scripted = yes
+						quadTextureSprite ="button_type_1"
+						buttonFont = "vic_18"
+						buttonText = "coal"
+						position = { x = 815 y = 510 } #538
+					}
+					
+					guiButtonType = {
+						name ="debug_set_goods_cloves_button"
+						scripted = yes
+						quadTextureSprite ="button_type_1"
+						buttonFont = "vic_18"
+						buttonText = "cloves"
+						position = { x = 957 y = 510 } #538
+					}
+					
+					#
+					
+					guiButtonType = {
+						name ="debug_prev_set_goods_page_button"
+						scripted = yes
+						quadTextureSprite ="GFX_standard_button_71"
+						buttonFont = "vic_18"
+						buttonText = "Previous"
+						position = { x = 838 y = 538 }
+					}
+					
+					guiButtonType = {
+						name ="debug_next_set_goods_page_button"
+						scripted = yes
+						quadTextureSprite ="GFX_standard_button_71"
+						buttonFont = "vic_18"
+						buttonText = "Next"
+						position = { x = 996 y = 538 }
+					}
+				}
+				
+				windowType = { # EE debug province modifier window
+					name = "debugging_custom_window_prov_mod"
+					scripted = yes
+					backGround=""
+					position = { x=-634 y=-40 }
+					size = { x=315 y=501 }
+					moveable = 0
+					dontRender = ""
+					horizontalBorder= ""
+					verticalBorder= ""
+					fullScreen = no
+					
+					### convert 
+					iconType = {
+						name ="debug_prov_mod_background"
+						spriteType = "GFX_provinceview_institutions_bg"
+						position = { x= 803 y = 75 }
+					}
+					
+					### modifiers
+					guiButtonType = {
+						name ="debug_prov_mod_sep_dec_button"
+						scripted = yes
+						quadTextureSprite ="GFX_button_straight_96_32"
+						buttonFont = "vic_18"
+						buttonText = "Dc. Sprtsm."
+						position = { x = 851 y = 118 } # sideways, 126 distance
+					}
+					guiButtonType = {
+						name ="debug_prov_mod_sep_inc_button"
+						scripted = yes
+						quadTextureSprite ="GFX_button_straight_96_32"
+						buttonFont = "vic_18"
+						buttonText = "Inc. Sprtsm."
+						position = { x = 977 y = 118 } # sideways, 126 distance
+					}
+					
+					guiButtonType = {
+						name ="debug_prov_mod_pros_dec_button"
+						scripted = yes
+						quadTextureSprite ="GFX_button_straight_96_32"
+						buttonFont = "vic_18"
+						buttonText = "Dc. Prosp."
+						position = { x = 851 y = 146 } # sideways, 126 distance
+					}
+					guiButtonType = {
+						name ="debug_prov_mod_pros_inc_button"
+						scripted = yes
+						quadTextureSprite ="GFX_button_straight_96_32"
+						buttonFont = "vic_18"
+						buttonText = "Inc. Prosp."
+						position = { x = 977 y = 146 } # sideways, 126 distance
+					}
+					
+					guiButtonType = {
+						name ="debug_prov_mod_aut_dec_button"
+						scripted = yes
+						quadTextureSprite ="GFX_button_straight_96_32"
+						buttonFont = "vic_18"
+						buttonText = "Dc. Auton."
+						position = { x = 851 y = 174 } # sideways, 126 distance
+					}
+					guiButtonType = {
+						name ="debug_prov_mod_aut_inc_button"
+						scripted = yes
+						quadTextureSprite ="GFX_button_straight_96_32"
+						buttonFont = "vic_18"
+						buttonText = "Inc. Auton."
+						position = { x = 977 y = 174 } # sideways, 126 distance
+					}
+					
+					#
+					
+					guiButtonType = {
+						name ="debug_prev_prov_mod_page_button"
+						scripted = yes
+						quadTextureSprite ="GFX_standard_button_71"
+						buttonFont = "vic_18"
+						buttonText = "Previous"
+						position = { x = 838 y = 538 }
+					}
+					
+					guiButtonType = {
+						name ="debug_next_prov_mod_page_button"
+						scripted = yes
+						quadTextureSprite ="GFX_standard_button_71"
+						buttonFont = "vic_18"
+						buttonText = "Next"
+						position = { x = 996 y = 538 }
+					}
+				}
+			}
+			
+			guiButtonType = {
+				name = "debug_menu_close_button"
+				scripted = yes
+				position = { x = 1434 y = -180 }
+				quadTextureSprite ="GFX_arrow_left_big"
+				clicksound = close_window
+				Orientation = "LOWER_RIGHT"
+				shortcut = "="
 			}
 		}
 
@@ -2833,6 +5343,7 @@ guiTypes = {
 				maxHeight = 20
 				format = left
 			}
+
 
 			#Global edict commander
 			guiButtonType = {
@@ -3101,938 +5612,7 @@ guiTypes = {
 			}
 		}
 
-		#### BUILDINGS WINDOW
-		windowType = {
-			name = "buildings_window"
-			backGround=""
-			position = { x=480 y=13 }
-			size = { x=475 y=480 }
-			dontRender = ""
-			horizontalBorder= ""
-			verticalBorder= ""
-			fullScreen = no
-			moveable = 0
-			Orientation = "UPPER_LEFT"
-
-			#### GREAT PROJECTS WINDOW
-			windowType = {
-				name = "great_projects_window"
-				backGround=""
-				position = { x=15 y=-105 }
-				size = { x=475 y=210 }
-				dontRender = ""
-				horizontalBorder= ""
-				verticalBorder= ""
-				fullScreen = no
-				moveable = 0
-				Orientation = "UPPER_LEFT"
-
-				iconType =
-				{
-					name ="great_projects_window_bg"
-					spriteType = "GFX_provinceview_great_projects_bg"
-					position = { x= -14 y = 0 }
-				}
-
-				instantTextBoxType = {
-					name = "header_label"
-					position = { x = 16 y = 29 }
-					textureFile = ""
-					font = "vic_22"
-					borderSize = {x = 2 y = 2}
-					text = "LEDGER_GREAT_PROJECTS"
-					maxWidth = 256 
-					maxHeight = 32
-					format = left
-				}
-				
-				smoothListboxType = {
-					name = "great_projects_list"
-					position = { x = 7 y = 55 }
-					backGround=""
-					size = { x = 300 y = 180 }
-					spacing = 2
-					scrollbartype = "standardlistbox_slider"
-					borderSize = { x = 0 y = 0 }
-				}
-			}
-
-			windowType = {
-				name = "general_buildings_window"
-				backGround=""
-				position = { x=1 y=115 }
-				size = { x=475 y=480 }
-				dontRender = ""
-				horizontalBorder= ""
-				verticalBorder= ""
-				fullScreen = no
-				moveable = 0
-				Orientation = "UPPER_LEFT"
-
-				iconType =
-				{
-					name ="provinceview_building_bg"
-					spriteType = "GFX_provinceview_building_bg"
-					position = { x= -3 y = 0 }
-				}
-
-				instantTextBoxType = {
-					name = "province_improvements_label"
-					position = { x = 30 y = 25 }
-					textureFile = ""
-					font = "vic_22"
-					borderSize = {x = 2 y = 2}
-					text = "MACRO_PROVINCE_IMPROVEMENTS"
-					maxWidth = 256
-					maxHeight = 32
-					format = left
-				}
-
-				guiButtonType = {
-					name = "center_of_trade_button"
-					position = { x=174 y=180 }
-					spriteType = "GFX_center_of_trade_inland_1"
-				}
-
-				iconType = {
-					name = "center_of_trade_icon"
-					position = { x=174 y=180 }
-					spriteType = "GFX_center_of_trade_inland_1"
-				}
-
-			}
-
-			windowType = {
-				name = "province_values_window"
-				backGround=""
-				position = { x=4 y=354 }
-				size = { x=475 y=480 }
-				dontRender = ""
-				horizontalBorder= ""
-				verticalBorder= ""
-				fullScreen = no
-				moveable = 0
-				Orientation = "UPPER_LEFT"
-
-				instantTextBoxType = {
-					name = "province_values_label"
-					position = { x = 30 y = 0 }
-					textureFile = ""
-					font = "vic_22"
-					borderSize = {x = 2 y = 2}
-					text = "PROVINCE_VALUES"
-					maxWidth = 256
-					maxHeight = 32
-					format = left
-				}
-
-				guiButtonType =
-				{
-					name ="expand_infrastructure_button"
-					position = { x= 240 y = 5 }
-					quadTextureSprite ="GFX_exploit_button_expand_infrastructure"
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = ""
-					buttonFont = "vic_18"
-					Orientation = "UPPER_LEFT"
-				}
-                
-				guiButtonType =
-				{
-					name ="reduce_infrastructure_button"
-					position = { x= 280 y = 5 }
-					quadTextureSprite ="GFX_exploit_button_reduce_infrastructure"
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = ""
-					buttonFont = "vic_18"
-					Orientation = "UPPER_LEFT"
-				}
-                
-				iconType =
-				{
-					name ="naval_forcelimit_icon"
-					spriteType = "GFX_naval_forcelimit_icon"
-					position = { x= 33 y = 82 }
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "naval_forcelimit_value"
-					position = { x = 72 y = 87 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "0"
-					maxWidth = 40
-					maxHeight = 20
-					format = right
-				}
-
-				iconType =
-				{
-					name ="land_forcelimit_icon"
-					spriteType = "GFX_land_forcelimit_icon"
-					position = { x= 130 y = 82 }
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "land_forcelimit_value"
-					position = { x = 148 y = 87 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "0"
-					maxWidth = 60
-					maxHeight = 20
-					format = right
-				}
-				
-				iconType =
-				{
-					name = "province_governing_cost_icon"
-					spriteType = "GFX_province_governing_cost"
-					position = { x= 224 y = 82  }
-					Orientation = "UPPER_LEFT"
-				}
-				
-				instantTextBoxType = {
-					name = "capacity_value"
-					position = { x = 253 y = 87 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "200"
-					maxWidth = 50
-					maxHeight = 20
-					format = right
-				}
-
-				iconType =
-				{
-					name = "center_of_revolution"
-					spriteType = "GFX_center_of_revolution"
-					position = { x = 28 y = 141 }
-					scale = 1
-				}
-
-				instantTextBoxType = {
-					name = "center_of_revolution_label"
-					position = { x = 90 y = 140 }
-					textureFile = ""
-					font = "vic_22"
-					borderSize = {x = 2 y = 2}
-					text = "CENTER_OF_REVOLUTION"
-					maxWidth = 230
-					maxHeight = 32
-					format = left
-				}
-
-				instantTextBoxType = {
-					name = "spreading_to_provinces_label"
-					position = { x = 93 y = 165 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "SPREADING_TO_NEARBY_PROVINCES"
-					maxWidth = 230
-					maxHeight = 32
-					format = left
-				}
-
-				instantTextBoxType = {
-					name = "spreading_revolution_label"
-					position = { x = 90 y = 140 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "REVOLUTION_IS_SPREADING"
-					maxWidth = 230
-					maxHeight = 32
-					format = left
-				}
-
-				instantTextBoxType = {
-					name = "spreaded_revolution_label"
-					position = { x = 90 y = 140 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "REVOLUTION_HAS_SPREADED"
-					maxWidth = 230
-					maxHeight = 32
-					format = left
-				}
-
-				iconType =
-				{
-					name = "revolution_spread"
-					spriteType = "GFX_revolution_spreading"
-					position = { x = 28 y = 141 }
-				}
-
-				iconType =
-				{
-					name ="revolution_progress"
-					spriteType = "GFX_provinceView_revolution_progressbar"
-					position = { x = 99 y = 172 }
-				}
-
-				iconType =
-				{
-					name ="revolution_progress_frame"
-					spriteType = "GFX_provinceView_morale_frame_medium"
-					position = { x = 90 y = 168 }
-				}
-
-				instantTextBoxType = {
-					name = "revolution_progress_label"
-					position = { x = 150 y = 190 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "0%"
-					maxWidth = 230
-					maxHeight = 32
-					format = left
-				}
-	
-				iconType =
-				{
-					name ="build_allowed_icon"
-					spriteType = "GFX_technologyView_show_buildings"
-					position = { x= 32 y = 35 }
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "build_allowed_value"
-					position = { x = 66 y = 40}
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "12.72"
-					maxWidth = 44
-					maxHeight = 20
-					format = right
-				}
-
-
-				iconType =
-				{
-					name ="build_cost_modifier_icon"
-					spriteType = "GFX_build_cost"
-					position = { x= 129 y = 39 }
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "build_cost_modifier"
-					position = { x = 150 y = 40 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "12.72"
-					maxWidth = 60
-					maxHeight = 20
-					format = right
-				}
-
-				iconType =
-				{
-					name ="build_time_modifier_icon"
-					spriteType = "GFX_build_time"
-					position = { x= 224 y = 36 }
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "build_time_modifier"
-					position = { x = 245 y = 40 }
-					textureFile = ""
-					font = "vic_18"
-					borderSize = {x = 2 y = 2}
-					text = "12.72"
-					maxWidth = 60
-					maxHeight = 20
-					format = right
-				}
-			}
-
-			windowType = {
-				name = "select_building"
-				backGround=""
-				position = { x=7 y=7 }
-				size = { x=345 y=465 }
-				dontRender = ""
-				horizontalBorder= ""
-				verticalBorder= ""
-				fullScreen = no
-				moveable = 0
-				Orientation = "UPPER_LEFT"
-
-				iconType =
-				{
-					name ="background"
-					spriteType = "GFX_select_building_small_bg"
-					position = { x= 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-				}
-
-
-				guiButtonType = {
-					name = "back_button"
-					position = { x=160 y =530}
-					quadTextureSprite ="GFX_standard_button_71"
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = "DOMESTIC_BACK"
-					buttonFont = "vic_18"
-					shortcut = "ESCAPE"
-					clicksound = back_click
-				}
-
-				listboxType = {
-					name = "list1"
-					position = { x = 14 y = 44 }
-					backGround=""
-					size = { x=348 y = 520}
-					Orientation = "UPPER_LEFT"
-					horizontal = 0
-					spacing = 2
-					scrollbartype = "standardlistbox_slider"
-					borderSize = {x = 0 y = 0}
-				}
-
-				instantTextBoxType = {
-					name = "window_title"
-					position = { x = 0 y = 5 }
-					textureFile = ""
-					font = "vic_29s"
-					borderSize = {x = 4 y = 4}
-					text = "LEDGER_BUILDINGS"
-					maxWidth = 390
-					maxHeight = 32
-					format = centre
-				}
-			}
-
-			#### for larger resolutions ####
-
-			windowType = {
-				name = "select_building_large"
-				backGround=""
-				position = { x=7 y=7 }
-				size = { x=345 y=465 }
-				dontRender = ""
-				horizontalBorder= ""
-				verticalBorder= ""
-				fullScreen = no
-				moveable = 0
-				Orientation = "UPPER_LEFT"
-
-				iconType =
-				{
-					name ="background"
-					spriteType = "gfx_select_building_large_bg2"
-					position = { x= 0 y = 0 }
-					Orientation = "UPPER_LEFT"
-				}
-
-				guiButtonType = {
-					name = "back_button"
-					position = { x=160 y =534}
-					quadTextureSprite ="GFX_standard_button_71"
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = "DOMESTIC_BACK"
-					buttonFont = "vic_18"
-					shortcut = "ESCAPE"
-					clicksound = back_click
-				}
-
-				listboxType = {
-					name = "list1"
-					position = { x = 14 y = 47 }
-					backGround=""
-					size = { x=348 y = 624}
-					Orientation = "UPPER_LEFT"
-					horizontal = 0
-					spacing = 2
-					scrollbartype = "standardlistbox_slider"
-					borderSize = {x = 0 y = 0}
-				}
-
-				instantTextBoxType = {
-					name = "window_title"
-					position = { x = 0 y = 5 }
-					textureFile = ""
-					font = "vic_29s"
-					borderSize = {x = 4 y = 4}
-					text = "LEDGER_BUILDINGS"
-					maxWidth = 390
-					maxHeight = 32
-					format = centre
-				}
-			}
-
-			windowType = {
-				name = "natives_buildings_window"
-				backGround=""
-				position = {  x=1 y=209 }
-				size = { x=475 y=270 }
-				dontRender = ""
-				horizontalBorder= ""
-				verticalBorder= ""
-				fullScreen = no
-				moveable = 0
-				Orientation = "UPPER_LEFT"
-
-				iconType =
-				{
-					name ="provinceview_native_building_bg_small"
-					spriteType = "GFX_select_building_small_bg2"
-					position = { x= 6 y = 0 }
-				}
-
-				guiButtonType = {
-					name = "sort_name"
-					position = { x = 70 y = 40 }
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = "NAME"
-					buttonFont = "vic_18"
-					quadTextureSprite ="GFX_sort_160"
-					Orientation = "UPPER_LEFT"
-				}
-
-				guiButtonType = {
-					name = "sort_cost"
-					position = { x = 230 y = 42 }
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = "PEACE_COST"
-					buttonFont = "vic_18"
-					quadTextureSprite ="GFX_sort_64"
-					Orientation = "UPPER_LEFT"
-				}
-
-				guiButtonType = {
-					name = "sort_time"
-					position = { x = 295 y = 42 }
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = "TIME"
-					buttonFont = "vic_18"
-					quadTextureSprite ="GFX_sort_81"
-					Orientation = "UPPER_LEFT"
-				}
-
-				listboxType = {
-					name = "buildings"
-					position = { x = 12 y = 67 }
-					backGround=""
-					size = { x=365 y = 210}
-					Orientation = "UPPER_LEFT"
-					horizontal = 0
-					spacing = 0
-					scrollbartype = "standardlistbox_slider"
-					borderSize = {x = 0 y = 0}
-				}
-
-								#COPIED PROVINCE VALUES WINDOW
-
-				windowType = {
-					name = "province_values_window"
-					backGround=""
-					position = { x=0 y=290 }
-					size = { x=475 y=586 }
-					dontRender = ""
-					horizontalBorder= ""
-					verticalBorder= ""
-					fullScreen = no
-					moveable = 0
-					Orientation = "UPPER_LEFT"
-
-					instantTextBoxType = {
-						name = "province_values_label"
-						position = { x = 30 y = 2 }
-						textureFile = ""
-						font = "vic_22"
-						borderSize = {x = 2 y = 2}
-						text = "PROVINCE_VALUES"
-						maxWidth = 256
-						maxHeight = 32
-						format = left
-					}
-
-
-					iconType =
-					{
-						name ="naval_forcelimit_icon"
-						spriteType = "GFX_naval_forcelimit_icon"
-						position = { x= 30 y = 33 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "naval_forcelimit_value"
-						position = { x = 62 y = 38 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "0"
-						maxWidth = 54
-						maxHeight = 20
-						format = center
-					}
-
-					iconType =
-					{
-						name ="land_forcelimit_icon"
-						spriteType = "GFX_land_forcelimit_icon"
-						position = { x= 120 y = 33 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "land_forcelimit_value"
-						position = { x = 152 y = 38 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "0"
-						maxWidth = 54
-						maxHeight = 20
-						format = center
-					}
-					
-					
-				
-	
-				
-					
-					iconType =
-					{
-						name ="governing_capacity_icon"
-						spriteType = "GFX_governing_capacity"
-						position = { x= 205 y = -12  }
-						Orientation = "UPPER_LEFT"
-						scale = 0.75
-					}
-					
-					instantTextBoxType = {
-						name = "capacity_value"
-						position = { x = 237 y = 0 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "200"
-						maxWidth = 40
-						maxHeight = 20
-						format = right
-					}
-
-					iconType =
-					{
-						name ="build_allowed_icon"
-						spriteType = "GFX_technologyView_show_buildings"
-						position = { x= 210 y = 32 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "build_allowed_value"
-						position = { x = 242 y = 38 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "12.72"
-						maxWidth = 54
-						maxHeight = 20
-						format = center
-					}
-
-
-					iconType =
-					{
-						name ="build_cost_modifier_icon"
-						spriteType = "GFX_build_cost"
-						position = { x= 300 y = 34 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "build_cost_modifier"
-						position = { x = 332 y = 38 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "12.72"
-						maxWidth = 54
-						maxHeight = 20
-						format = center
-					}
-					iconType =
-					{
-						name ="build_time_modifier_icon"
-						spriteType = "GFX_build_time"
-						position = { x= 300 y = -4 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "build_time_modifier"
-						position = { x = 332 y = 0 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "12.72"
-						maxWidth = 44
-						maxHeight = 20
-						format = right
-					}
-				}
-
-			}
-
-			##### for larger resolutions ###
-
-			windowType = {
-				name = "natives_buildings_window_large"
-				backGround=""
-				position = {  x=1 y=150 }
-				size = { x=475 y=270 }
-				dontRender = ""
-				horizontalBorder= ""
-				verticalBorder= ""
-				fullScreen = no
-				moveable = 0
-				Orientation = "UPPER_LEFT"
-
-				iconType =
-				{
-					name ="provinceview_native_building_bg_large"
-					spriteType = "GFX_select_building_small_bg2"
-					position = { x= 6 y = 0 }
-				}
-
-				guiButtonType = {
-					name = "sort_name"
-					position = { x = 70 y = 40 }
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = "NAME"
-					buttonFont = "vic_18"
-					quadTextureSprite ="GFX_sort_160"
-					Orientation = "UPPER_LEFT"
-				}
-
-				guiButtonType = {
-					name = "sort_cost"
-					position = { x = 230 y = 42 }
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = "PEACE_COST"
-					buttonFont = "vic_18"
-					quadTextureSprite ="GFX_sort_64"
-					Orientation = "UPPER_LEFT"
-				}
-
-				guiButtonType = {
-					name = "sort_time"
-					position = { x = 295 y = 42 }
-					tooltip = ""
-					tooltipText =""
-					delayedTooltipText = ""
-					buttonText = "TIME"
-					buttonFont = "vic_18"
-					quadTextureSprite ="GFX_sort_81"
-					Orientation = "UPPER_LEFT"
-				}
-
-				listboxType = {
-					name = "buildings"
-					position = { x = 12 y = 67 }
-					backGround=""
-					size = { x=365 y = 210}
-					Orientation = "UPPER_LEFT"
-					horizontal = 0
-					spacing = 0
-					scrollbartype = "standardlistbox_slider"
-					borderSize = {x = 0 y = 0}
-				}
-
-				#COPIED PROVINCE VALUES WINDOW
-
-				windowType = {
-					name = "province_values_window"
-					backGround=""
-					position = { x=0 y=-310 }
-					size = { x=475 y=586 }
-					dontRender = ""
-					horizontalBorder= ""
-					verticalBorder= ""
-					fullScreen = no
-					moveable = 0
-					Orientation = "UPPER_LEFT"
-
-					instantTextBoxType = {
-						name = "province_values_label"
-						position = { x = 30 y = 602 }
-						textureFile = ""
-						font = "vic_22"
-						borderSize = {x = 2 y = 2}
-						text = "PROVINCE_VALUES"
-						maxWidth = 256
-						maxHeight = 32
-						format = left
-					}
-
-					iconType =
-					{
-						name ="naval_forcelimit_icon"
-						spriteType = "GFX_naval_forcelimit_icon"
-						position = { x= 30 y = 634 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "naval_forcelimit_value"
-						position = { x = 62 y = 638 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "0"
-						maxWidth = 54
-						maxHeight = 20
-						format = center
-					}
-
-					iconType =
-					{
-						name ="land_forcelimit_icon"
-						spriteType = "GFX_land_forcelimit_icon"
-						position = { x= 120 y = 634 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "land_forcelimit_value"
-						position = { x = 152 y = 638 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "0"
-						maxWidth = 54
-						maxHeight = 20
-						format = center
-					}
-
-	
-				
-				
-					iconType =
-					{
-						name ="governing_capacity_icon"
-						spriteType = "GFX_governing_capacity"
-						position = { x= 212 y = 599 }
-						Orientation = "UPPER_LEFT"
-					}
-					
-					instantTextBoxType = {
-						name = "capacity_value"
-						position = { x = 245 y = 600 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "200"
-						maxWidth = 40
-						maxHeight = 20
-						format = right
-					}
-	
-					iconType =
-					{
-						name ="build_allowed_icon"
-						spriteType = "GFX_technologyView_show_buildings"
-						position = { x= 210 y = 634 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "build_allowed_value"
-						position = { x = 242 y = 638 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "12.72"
-						maxWidth = 54
-						maxHeight = 20
-						format = center
-					}
-
-
-					iconType =
-					{
-						name ="build_cost_modifier_icon"
-						spriteType = "GFX_build_cost"
-						position = { x= 300 y = 634 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "build_cost_modifier"
-						position = { x = 332 y = 638 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "12.72"
-						maxWidth = 54
-						maxHeight = 20
-						format = center
-					}
-
-					iconType =
-					{
-						name ="build_time_modifier_icon"
-						spriteType = "GFX_build_time"
-						position = { x= 300 y = 596 }
-						Orientation = "UPPER_LEFT"
-					}
-
-					instantTextBoxType = {
-						name = "build_time_modifier"
-						position = { x = 332 y = 600 }
-						textureFile = ""
-						font = "vic_18"
-						borderSize = {x = 2 y = 2}
-						text = "12.72"
-						maxWidth = 54
-						maxHeight = 20
-						format = center
-					}
-				}
-			}
-
-			guiButtonType = {
-				name = "building_close_button"
-				position = { x = 304 y = 120 }
-				quadTextureSprite ="GFX_closebutton2"
-				clicksound = close_window
-			}
-		}
+		
 
 		#### INSTITUTIONS WINDOW
 		windowType = {
@@ -4188,7 +5768,7 @@ guiTypes = {
 			scale = 0.55
 		}
 	}
-		
+
 	### PROVINCE CORE
 	windowType = {
 		name = "CoreShieldItem"
@@ -5015,7 +6595,7 @@ guiTypes = {
 		guiButtonType =
 		{
 			name ="move_button"
-			position = { x= 9 y = 28 }
+			position = { x= -10000 y = 28 } #GTFO
 			quadTextureSprite ="GFX_great_project_level_icon_move"
 			tooltip = ""
 			tooltipText =""
@@ -6865,8 +8445,9 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
 			maxHeight = 18
-			text = "2000¤"
+			text = "2000�"
 		}
+
 	}
 
 	windowType =
@@ -6980,11 +8561,6 @@ guiTypes = {
 			maxWidth = 114
 			maxHeight = 20
 			format = left
-		}
-		guiButtonType = {
-			name = "name_overlay"
-			position = { x = 31 y = 6 }
-			quadTextureSprite = "GFX_state_view_invisible_button_114x20"
 		}
 
 		guiButtonType =
@@ -7160,11 +8736,12 @@ guiTypes = {
 				scrollbartype = "standardlistbox_slider"
 				borderSize = {x = 0 y = 0}
 			}
-		guiButtonType = {
+			guiButtonType = {
 				name = "close_edicts_button"
 				position = { x = 888 y = -26 }
 				quadTextureSprite ="GFX_closebutton2"
 				clicksound = close_window
 			}
-	}
+		}
+
 }
