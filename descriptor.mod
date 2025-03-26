@@ -2,7 +2,9 @@ version="1.0"
 tags={
 	"Gameplay"
 }
-name="Quality of Life Interface Tools"
+dependencies={
+	"Europa Expanded"
+}
+name="Quality of Life Interface Tools: Europa Expanded"
 supported_version="v1.37.5.0"
 path=""
-remote_file_id="3448062145"
