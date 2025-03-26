@@ -1,7 +1,8 @@
 custom_window = {
 	name = global_edicts_window
-		potential = {
+	potential = {
 		is_state = yes
+		owned_by = FROM
 		FROM = {
 			has_country_flag = global_edicts_window_open
 		}
