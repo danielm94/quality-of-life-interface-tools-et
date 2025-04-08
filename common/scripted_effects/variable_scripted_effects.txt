@@ -1,0 +1,297 @@
+#Usage:
+#var: Variable
+#effect: The effect to apply variable to.
+#Do not use values > 999,999.999 or < -999,999.999
+variable_effect = {
+	set_variable = {
+		which = num
+		which = $var$
+	}
+	set_variable = {
+		which = is_negative
+		value = 0
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = num
+					value = 0
+				}
+			}
+		}
+		set_variable = {
+			which = is_negative
+			value = 1
+		}
+		multiply_variable = {
+			which = num
+			value = -1
+		}
+	}
+	set_variable = {
+		which = fraction
+		which = num
+	}
+	set_variable = {
+		which = integer
+		which = num
+	}
+	#-1 rounds down, effectively truncating the decimal
+	round_variable = {
+		which = integer
+		value = -1
+	}
+	subtract_variable = {
+		which = fraction
+		which = integer
+	}
+	decimal_decomposition_fractions_effect = {
+		var = fraction
+		effect = $effect$
+		increment = 0.1
+	}
+	decimal_decomposition_fractions_effect = {
+		var = fraction
+		effect = $effect$
+		increment = 0.01
+	}
+	decimal_decomposition_fractions_effect = {
+		var = fraction
+		effect = $effect$
+		increment = 0.001
+	}
+	decimal_decomposition_integers_effect = {
+		var = integer
+		effect = $effect$
+		increment = 1
+	}
+	decimal_decomposition_integers_effect = {
+		var = integer
+		effect = $effect$
+		increment = 10
+	}
+	decimal_decomposition_integers_effect = {
+		var = integer
+		effect = $effect$
+		increment = 100
+	}
+	decimal_decomposition_integers_effect = {
+		var = integer
+		effect = $effect$
+		increment = 1000
+	}
+	decimal_decomposition_integers_effect = {
+		var = integer
+		effect = $effect$
+		increment = 10000
+	}
+	decimal_decomposition_integers_effect = {
+		var = integer
+		effect = $effect$
+		increment = 100000
+	}
+}
+
+decimal_decomposition_integers_effect = {
+	if = {
+		limit = {
+			var_greater_than_0 = {
+				var = $var$
+			}
+		}
+		set_variable = {
+			which = modulo
+			which = $var$
+		}
+		modulo_variable = {
+			which = modulo
+			value = 10
+		}
+		divide_variable = {
+			which = $var$
+			value = 10
+		}
+		#-1 rounds down, effectively truncating the decimal
+		round_variable = {
+			which = $var$
+			value = -1
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = modulo
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = is_negative
+						value = 1
+					}
+				}
+				$effect$ = -$increment$
+			}
+			else = {
+				$effect$ = $increment$
+			}
+			subtract_variable = {
+				which = modulo
+				value = 1
+			}
+		}
+	}
+}
+
+decimal_decomposition_fractions_effect = {
+	if = {
+		limit = {
+			var_greater_than_0 = {
+				var = $var$
+			}
+		}
+		multiply_variable = {
+			which = $var$
+			value = 10
+		}
+		set_variable = {
+			which = temp_fraction
+			which = $var$
+		}
+		set_variable = {
+			which = temp_integer
+			which = $var$
+		}
+		#-1 rounds down, effectively truncating the decimal
+		round_variable = {
+			which = temp_integer
+			value = -1
+		}
+		subtract_variable = {
+			which = $var$
+			which = temp_integer
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = temp_integer
+					value = 1
+				}
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = is_negative
+						value = 1
+					}
+				}
+				$effect$ = -$increment$
+			}
+			else = {
+				$effect$ = $increment$
+			}
+			subtract_variable = {
+				which = temp_integer
+				value = 1
+			}
+		}
+	}
+}
+
+#Usage:
+#var - The variable to use as the duration. Negative values produce who fucking knows effects.
+#modifier - The modifier to apply
+variable_province_modifier = {
+	set_variable = {
+		which = num
+		which = $var$
+	}
+	#-1 rounds down, effectively truncating the decimal
+	round_variable = {
+		which = num
+		value = -1
+	}
+	add_province_modifier = {
+		name = $modifier$
+		duration = 1
+	}
+	subtract_variable = {
+		which = num
+		value = 1
+	}
+
+	decimal_decomposition_extend_modifier_effect = {
+		var = num
+		modifier = $modifier$
+		increment = 1
+	}
+	decimal_decomposition_extend_modifier_effect = {
+		var = num
+		modifier = $modifier$
+		increment = 10
+	}
+	decimal_decomposition_extend_modifier_effect = {
+		var = num
+		modifier = $modifier$
+		increment = 100
+	}
+	decimal_decomposition_extend_modifier_effect = {
+		var = num
+		modifier = $modifier$
+		increment = 1000
+	}
+	decimal_decomposition_extend_modifier_effect = {
+		var = num
+		modifier = $modifier$
+		increment = 10000
+	}
+	decimal_decomposition_extend_modifier_effect = {
+		var = num
+		modifier = $modifier$
+		increment = 100000
+	}
+}
+
+decimal_decomposition_extend_modifier_effect = {
+	if = {
+		limit = {
+			var_greater_than_0 = {
+				var = $var$
+			}
+		}
+		set_variable = {
+			which = modulo
+			which = $var$
+		}
+		modulo_variable = {
+			which = modulo
+			value = 10
+		}
+		divide_variable = {
+			which = $var$
+			value = 10
+		}
+		#-1 rounds down, effectively truncating the decimal
+		round_variable = {
+			which = $var$
+			value = -1
+		}
+		while = {
+			limit = {
+				check_variable = {
+					which = modulo
+					value = 1
+				}
+			}
+			extend_province_modifier = {
+				name = $modifier$
+				duration = $increment$
+			}
+			subtract_variable = {
+				which = modulo
+				value = 1
+			}
+		}
+	}
+}
