@@ -1,6 +1,6 @@
 ﻿l_english:
  global_edicts_commander_trade_config_events.1.t: "Advanced Configuration Settings"
- global_edicts_commander_trade_config_events.1.d: "You can control which trade nodes are included or excluded when applying the Protect Trade state edict. States that are within a §RDisabled§! trade node will not have the edict applied to them. This is "
+ global_edicts_commander_trade_config_events.1.d: "You can control which trade nodes are included or excluded when applying the Protect Trade state edict. States that are within a §RDisabled§! trade node will not have the edict applied to them."
  global_edicts_commander_trade_config_events.1.a: "Enable All Trade Nodes"
  global_edicts_commander_trade_config_events.1.b: "Disable All Trade Nodes"
  global_edicts_commander_trade_config_events.1.c: "Configure Europe's Trade Nodes: [edict_commander_europe_trade_flags_status_loc]"
