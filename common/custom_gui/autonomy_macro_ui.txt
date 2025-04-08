@@ -344,6 +344,9 @@ custom_button = {
 	potential = {
 	}
 	trigger = {
+		FROM = {
+			is_at_war = no
+		}
 		custom_trigger_tooltip = {
 			tooltip = autonomy_macro_lower_autonomy_button_trigger_tt
 			FROM = {
@@ -429,6 +432,7 @@ custom_icon = {
 	name = autonomy_macro_lower_autonomy_button_glow
 	potential = {
 		FROM = {
+			is_at_war = no
 			check_variable = {
 				which = provinces_that_can_lower_autonomy
 				value = 1
