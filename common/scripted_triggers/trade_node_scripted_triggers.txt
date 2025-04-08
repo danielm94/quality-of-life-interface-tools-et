@@ -3,11 +3,11 @@ province_is_in_great_lakes_trade_node = {
 }
 
 province_is_in_congo_trade_node = {
-	same_trade_node_as = 4097
+	same_trade_node_as = 4089 # Corrected from 4097
 }
 
 province_is_in_zambezi_trade_node = {
-	same_trade_node_as = 1191
+	same_trade_node_as = 1190 # Corrected from 1191
 }
 
 province_is_in_katsina_trade_node = {
@@ -15,7 +15,7 @@ province_is_in_katsina_trade_node = {
 }
 
 province_is_in_ethiopia_trade_node = {
-	same_trade_node_as = 2772
+	same_trade_node_as = 1224 # Corrected from 2772
 }
 
 province_is_in_gulf_of_aden_trade_node = {
@@ -47,7 +47,7 @@ province_is_in_tunis_trade_node = {
 }
 
 province_is_in_safi_trade_node = {
-	same_trade_node_as = 1110
+	same_trade_node_as = 345 # Corrected from 1110
 }
 
 province_is_in_girin_trade_node = {
@@ -66,6 +66,7 @@ province_is_in_burma_trade_node = {
 	same_trade_node_as = 584
 }
 
+# Note: Trigger name "siam" corresponds to node "gulf_of_siam"
 province_is_in_siam_trade_node = {
 	same_trade_node_as = 1365
 }
@@ -110,6 +111,7 @@ province_is_in_malacca_trade_node = {
 	same_trade_node_as = 1361
 }
 
+# Note: Trigger name "bengal" corresponds to node "ganges_delta"
 province_is_in_bengal_trade_node = {
 	same_trade_node_as = 1343
 }
@@ -126,12 +128,13 @@ province_is_in_deccan_trade_node = {
 	same_trade_node_as = 1948
 }
 
+# Note: Trigger name "coromandel" corresponds to node "comorin_cape"
 province_is_in_coromandel_trade_node = {
 	same_trade_node_as = 1340
 }
 
 province_is_in_gujarat_trade_node = {
-	same_trade_node_as = 504
+	same_trade_node_as = 4457 # Corrected from 504
 }
 
 province_is_in_hormuz_trade_node = {
@@ -147,7 +150,7 @@ province_is_in_samarkand_trade_node = {
 }
 
 province_is_in_persia_trade_node = {
-	same_trade_node_as = 4341
+	same_trade_node_as = 426 # Corrected from 4341
 }
 
 province_is_in_aleppo_trade_node = {
@@ -195,7 +198,7 @@ province_is_in_wien_trade_node = {
 }
 
 province_is_in_saxony_trade_node = {
-	same_trade_node_as = 61
+	same_trade_node_as = 59 # Corrected from 61
 }
 
 province_is_in_baltic_sea_trade_node = {
@@ -234,6 +237,7 @@ province_is_in_valencia_trade_node = {
 	same_trade_node_as = 1295
 }
 
+# Note: Trigger name "genoa" corresponds to node "genua"
 province_is_in_genoa_trade_node = {
 	same_trade_node_as = 1298
 }
@@ -247,15 +251,16 @@ province_is_in_english_channel_trade_node = {
 }
 
 province_is_in_rio_grande_trade_node = {
-	same_trade_node_as = 2499
+	same_trade_node_as = 2667 # Corrected from 2499
 }
 
+# Note: Trigger name "hudson_bay" corresponds to node "james_bay"
 province_is_in_hudson_bay_trade_node = {
 	same_trade_node_as = 1486
 }
 
 province_is_in_california_trade_node = {
-	same_trade_node_as = 2021
+	same_trade_node_as = 871 # Corrected from 2021
 }
 
 province_is_in_mississippi_river_trade_node = {
@@ -263,7 +268,7 @@ province_is_in_mississippi_river_trade_node = {
 }
 
 province_is_in_ohio_trade_node = {
-	same_trade_node_as = 2526
+	same_trade_node_as = 940 # Corrected from 2526
 }
 
 province_is_in_mexico_trade_node = {
@@ -274,34 +279,41 @@ province_is_in_panama_trade_node = {
 	same_trade_node_as = 835
 }
 
+# Note: Trigger name "caribbean" corresponds to node "carribean_trade"
 province_is_in_caribbean_trade_node = {
 	same_trade_node_as = 1516
 }
 
+# Note: Trigger name "chesapeake" corresponds to node "chesapeake_bay"
 province_is_in_chesapeake_trade_node = {
 	same_trade_node_as = 1500
 }
 
+# Note: Trigger name "gulf_of_st_lawrence" corresponds to node "st_lawrence"
 province_is_in_gulf_of_st_lawrence_trade_node = {
 	same_trade_node_as = 1490
 }
 
 province_is_in_patagonia_trade_node = {
-	same_trade_node_as = 2868
+	same_trade_node_as = 1538 # Corrected from 2868
 }
 
+# Note: Trigger name "amazonas" corresponds to node "amazonas_node"
 province_is_in_amazonas_trade_node = {
-	same_trade_node_as = 2935
+	same_trade_node_as = 2934 # Corrected from 2935
 }
 
+# Note: Trigger name "cuiaba" refers to province 800, which is in the "bolivia" node
 province_is_in_cuiaba_trade_node = {
-	same_trade_node_as = 800
+	same_trade_node_as = 2941 # Corrected from 800
 }
 
+# Note: Trigger name "lima" refers to province 809, which is in the "peru" node
 province_is_in_lima_trade_node = {
-	same_trade_node_as = 809
+	same_trade_node_as = 1545 # Corrected from 809
 }
 
+# Note: Trigger name "rio_de_la_plata" corresponds to node "laplata"
 province_is_in_rio_de_la_plata_trade_node = {
 	same_trade_node_as = 1536
 }
@@ -310,6 +322,7 @@ province_is_in_brazil_trade_node = {
 	same_trade_node_as = 1531
 }
 
+# Note: Trigger name "polynesian_triangle" corresponds to node "polynesia_node"
 province_is_in_polynesian_triangle_trade_node = {
 	same_trade_node_as = 1997
 }
