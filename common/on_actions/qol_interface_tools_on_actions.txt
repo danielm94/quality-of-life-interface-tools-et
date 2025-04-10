@@ -34,8 +34,10 @@ on_province_religion_converted = {
 				limit = {
 					has_reactive_enforce_religious_unity_setter_enabled = yes
 				}
-				edict_commander_calculate_religion_strength = yes
-				edict_commander_enforce_religious_unity_easiest_to_convert = yes
+				country_event = {
+					id = global_edicts_commander_events.19
+					days = 30
+				}
 			}
 		}
 		owner = {

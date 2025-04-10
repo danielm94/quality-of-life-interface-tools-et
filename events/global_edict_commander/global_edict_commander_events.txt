@@ -974,3 +974,21 @@ country_event = {
 		}
 	}
 }
+
+#sneaky missionary_edict
+country_event = {
+	id = global_edicts_commander_events.19
+	title = global_edicts_commander_events.19.t
+	desc = global_edicts_commander_events.19.d
+	picture = BIG_BOOK_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	immediate = {
+		edict_commander_calculate_religion_strength = yes
+		edict_commander_enforce_religious_unity_states_with_missionary = yes
+	}
+	option = {
+		name = "OK"
+	}
+	# Dummy option
+}
